@@ -1,4 +1,4 @@
-# 🤗 Module 06: Hugging Face CLI & Python Shortcuts
+# 🤗 Module 10: Hugging Face CLI & Python Shortcuts
 
 Quick commands for downloading models, GGUF files, datasets, and managing cache storage with Hugging Face.
 

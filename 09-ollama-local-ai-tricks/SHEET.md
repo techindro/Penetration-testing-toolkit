@@ -1,4 +1,4 @@
-# 🦙 Module 05: Ollama Local AI & Model Commands
+# 🦙 Module 09: Ollama Local AI & Model Management Commands
 
 Quick-reference commands for running, pulling, listing, and managing local LLM models with Ollama.
 
@@ -32,7 +32,7 @@ Create a `Modelfile` to customize model system prompts and temperature:
 ```dockerfile
 FROM llama3
 PARAMETER temperature 0.7
-SYSTEM """You are a helpful coding assistant who explains technical concepts simply."""
+SYSTEM """You are a professional coding and analytics assistant explaining concepts clearly."""
 ```
 
 Create custom model from Modelfile:

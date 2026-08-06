@@ -1,4 +1,4 @@
-# 📱 Module 07: Termux Android Terminal Shortcuts & Setup
+# 📱 Module 11: Termux Android Terminal Shortcuts & Setup
 
 Quick-reference commands for setting up Termux on Android, storage permissions, SSH access, and package management.
 

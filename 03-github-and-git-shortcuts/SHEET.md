@@ -1,42 +1,55 @@
-# 🐙 Module 03: Git & GitHub Shortcut Tricks
+# 🐙 Module 03: Git & GitHub Comprehensive One-Liners & Tricks
 
-One-liner Git commands for fast committing, stashing changes, fixing mistakes, and clean log viewing.
+Essential Git one-liners and GitHub workflow tricks for committing, branch management, fixing mistakes, and clean history visualization.
 
 ---
 
-## ⚡ 1. Git One-Liner Shortcuts
+## ⚡ 1. Git Daily One-Liners
 
 ```bash
-# Pretty git history graph in one line
+# Display clean single-line git history with branch graph
 git log --oneline --graph --all
 
-# Temporarily save uncommitted work and revert later
+# Save uncommitted changes temporarily without committing
 git stash
+# Restore previously stashed changes
 git stash pop
 
-# Undo last commit but keep your code changes in working folder
+# Undo the most recent commit while keeping all code changes in workspace
 git reset --soft HEAD~1
 
-# Discard ALL uncommitted local changes instantly
+# Discard all local uncommitted changes instantly (Fresh start)
 git checkout .
 # or
 git restore .
 
-# Change commit message of the last commit
-git commit --amend -m "new updated commit message"
+# Update the message of the last commit
+git commit --amend -m "Updated commit message"
+
+# Rename local branch
+git branch -m old-name new-name
+
+# Delete local branch
+git branch -d branch-name
+
+# Delete remote branch on GitHub
+git push origin --delete branch-name
+
+# Clean untracked files and directories from repository
+git clean -fd
 ```
 
 ---
 
-## 🚀 2. GitHub CLI & Web Shortcuts
+## 🚀 2. GitHub Web & CLI Shortcuts
 
 ```bash
-# Clone repository quickly via SSH
+# Clone repository using SSH key
 git clone git@github.com:username/repository.git
 
-# Fast SSH connection test
+# Test GitHub SSH connection
 ssh -T git@github.com
 
-# GitHub Web Shortcut:
-# Press '.' (Period key) while viewing any repository on GitHub.com to open VS Code Web directly in browser!
+# GitHub Web Browser Shortcut:
+# Press '.' (Period key) while viewing any repository on GitHub.com to open web-based VS Code directly in your browser!
 ```
