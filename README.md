@@ -10,7 +10,7 @@
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-Yes-blue.svg?style=for-the-badge&logo=github)](https://github.com/techindro/Penetration-testing-toolkit)
 
 <p align="center">
-  <b>A collection of 35 practical cheat sheets for everyday use by engineering students and developers. Simple language, no complex jargon.</b>
+  <b>A collection of 35 practical cheat sheets featuring a 100-Day LeetCode & DSA Master Roadmap in both C++ and Java for everyday use by engineering students and developers. Simple language, no complex jargon.</b>
 </p>
 
 [Browse All 35 Modules](#-35-cheat-sheet-modules) • [System Flow](#-system-flow) • [Useful Links](#-useful-links)
@@ -22,6 +22,7 @@
 ## 📌 Features
 
 - 📄 **Simple Human Language:** Easy to read, clear explanations without unnecessary complicated words.
+- 💡 **100-Day LeetCode DSA Roadmap:** Day 1 to Day 100 pattern breakdown with approach comparison (Brute Force ➔ Optimal) and solutions in **BOTH C++ and Java**.
 - 💡 **Real Examples:** Every command, formula, and shortcut includes a real working example.
 - 📥 **Direct File Links:** Download any markdown file directly using raw links.
 - 🌐 **Software Links:** Direct links to official download pages for all tools.
@@ -33,8 +34,8 @@
 
 ```mermaid
 graph TD
-    subgraph Phase1["🎓 Core CSE Subjects & Interview Practice"]
-        A1["23. DSA Complexity"] --- A2["28. LeetCode C++"] --- A3["29. SQL Queries"] --- A4["30. System Design Math"] --- A5["24. OOP Concepts"] --- A6["25. Computer Networks"] --- A7["26. Operating Systems"] --- A8["27. System Design HLD/LLD"]
+    subgraph Phase1["🎓 Core CSE Subjects & 100-Day DSA Coding"]
+        A1["23. DSA Complexity"] --- A2["28. 100-Day LeetCode (C++ & Java)"] --- A3["29. SQL Queries"] --- A4["30. System Design Math"] --- A5["24. OOP Concepts"] --- A6["25. Computer Networks"] --- A7["26. Operating Systems"] --- A8["27. System Design HLD/LLD"]
     end
 
     subgraph Phase2["💻 OS, Editors, Web & Shell"]
@@ -85,7 +86,7 @@ graph TD
 | **25** | **🌐 Computer Networks** | [Read Sheet](25-computer-networks-protocols-subnetting/SHEET.md) | [📥 Download RAW](https://raw.githubusercontent.com/techindro/Penetration-testing-toolkit/main/25-computer-networks-protocols-subnetting/SHEET.md) | [Wireshark](https://www.wireshark.org/) |
 | **26** | **💻 Operating Systems** | [Read Sheet](26-operating-systems-deadlock-scheduling/SHEET.md) | [📥 Download RAW](https://raw.githubusercontent.com/techindro/Penetration-testing-toolkit/main/26-operating-systems-deadlock-scheduling/SHEET.md) | [Ubuntu](https://ubuntu.com/) |
 | **27** | **📐 System Design HLD/LLD** | [Read Sheet](27-system-design-hld-lld-cap-theorem/SHEET.md) | [📥 Download RAW](https://raw.githubusercontent.com/techindro/Penetration-testing-toolkit/main/27-system-design-hld-lld-cap-theorem/SHEET.md) | [ByteByteGo](https://bytebytego.com/) |
-| **28** | **💡 LeetCode C++ Patterns** | [Read Sheet](28-leetcode-dsa-patterns-cheatsheet/SHEET.md) | [📥 Download RAW](https://raw.githubusercontent.com/techindro/Penetration-testing-toolkit/main/28-leetcode-dsa-patterns-cheatsheet/SHEET.md) | [LeetCode](https://leetcode.com/) |
+| **28** | **💡 100-Day DSA (C++ & Java)** | [Read Sheet](28-leetcode-dsa-patterns-cheatsheet/SHEET.md) | [📥 Download RAW](https://raw.githubusercontent.com/techindro/Penetration-testing-toolkit/main/28-leetcode-dsa-patterns-cheatsheet/SHEET.md) | [LeetCode](https://leetcode.com/) |
 | **29** | **🗄️ SQL Interview Queries** | [Read Sheet](29-sql-queries-window-functions-joins/SHEET.md) | [📥 Download RAW](https://raw.githubusercontent.com/techindro/Penetration-testing-toolkit/main/29-sql-queries-window-functions-joins/SHEET.md) | [SQL Practice](https://sqlzoo.net/) |
 | **30** | **📐 System Design Math** | [Read Sheet](30-system-design-interview-estimation-formulas/SHEET.md) | [📥 Download RAW](https://raw.githubusercontent.com/techindro/Penetration-testing-toolkit/main/30-system-design-interview-estimation-formulas/SHEET.md) | [System Design](https://github.com/donnemartin/system-design-primer) |
 | **31** | **🟢 Node.js & Express** | [Read Sheet](31-nodejs-npm-express-cli-shortcuts/SHEET.md) | [📥 Download RAW](https://raw.githubusercontent.com/techindro/Penetration-testing-toolkit/main/31-nodejs-npm-express-cli-shortcuts/SHEET.md) | [Node.js](https://nodejs.org/) |
