@@ -1,37 +1,37 @@
-# 🐧 BugFix FM - Linux & Kali Linux Master Command Booklet
-> **A Comprehensive Command Reference & Cheatsheet for Computer Science & Engineering Students.**
+# ⚡ BugFix FM - Developer & Student Shortcut Formula Booklet
+> **A Clean, Human-Readable Daily Shortcut Cheatsheet for VS Code, GitHub, Docker, Ollama, Hugging Face, Linux, Kali Linux, and Termux.**
 
 Curated by **Shubham Patel (techindro)**
 
-**⚠️ DISCLAIMER:** This booklet is strictly for educational purposes, authorized research, and defensive security auditing. Performing unauthorized attacks or scanning networks without explicit, written permission/scope is completely illegal and punishable by law.
-
 ---
 
-## 📌 Master Command Cheatsheet Index
+## 📌 Master Shortcut Booklet Index
 
-| Module | Topic / Focus Area | Frequently Forgotten Commands & Solved Bugs | Cheatsheet Link |
+| Module | Category / Tool | Key Shortcuts & One-Liners | Cheatsheet Link |
 | :--- | :--- | :--- | :---: |
-| **01. File System & Permissions** | File Search & Security Bits | `find` (SUID/size/name), `chmod 755`/`4755`, `chown`, `tar`, `df -h`, `stat` | [View Cheatsheet](01-file-system-and-permissions/SHEET.md) |
-| **02. Text Processing & Parsing** | Data Extraction & Editing | `grep -rn`, `awk -F ':'`, `sed -i 's///g'`, `sort \| uniq -c`, `cut -d` | [View Cheatsheet](02-text-processing-grep-awk-sed/SHEET.md) |
-| **03. Networking & Firewall** | Ports, DNS & HTTP Testing | `ip a`, `ss -tulpn`, `dig ANY`, `curl -X POST`, `wget -c`, `ufw allow` | [View Cheatsheet](03-networking-ports-firewall/SHEET.md) |
-| **04. Process & Resource Control** | Systemd, Logs & Backgrounding | `ps aux`, `kill -9`, `systemctl status/restart`, `journalctl -u -f`, `free -h` | [View Cheatsheet](04-process-systemd-resource-monitoring/SHEET.md) |
-| **05. Users, Groups & Sudo** | Privileges & Environment Groups | `whoami`, `id`, `usermod -aG (docker/dialout/sudo)`, `sudo -l`, `visudo` | [View Cheatsheet](05-users-groups-sudo-permissions/SHEET.md) |
-| **06. Kali Security Tools** | Audit & Recon CLI Tools Syntax | `nmap -sS -sV`, `subfinder`, `httpx`, `gobuster`, `ffuf`, `hashcat`, `hydra` | [View Cheatsheet](06-kali-security-tools-cheatsheet/SHEET.md) |
+| **01. Linux & Kali Linux** | CLI Shortcuts | `Ctrl+R` (Search history), `sudo !!`, `cd -`, `nohup` | [View Sheet](01-linux-and-kali-shortcuts/SHEET.md) |
+| **02. VS Code** | Editor Shortcuts | `Ctrl+P` (Quick open), `Ctrl+Shift+P`, `Alt+Click` multi-cursor, `Ctrl+D` | [View Sheet](02-vscode-keyboard-tricks/SHEET.md) |
+| **03. Git & GitHub** | Version Control | `git log --oneline`, `git stash`, `git reset --soft`, GitHub `.` key | [View Sheet](03-github-and-git-shortcuts/SHEET.md) |
+| **04. Docker** | Containers | `docker exec -it`, stop/rm all containers, `docker system prune -a` | [View Sheet](04-docker-containers-tricks/SHEET.md) |
+| **05. Ollama Local AI** | LLM Engine | `ollama run llama3`, `ollama list`, `ollama ps`, Modelfile setup | [View Sheet](05-ollama-local-ai-tricks/SHEET.md) |
+| **06. Hugging Face** | ML Models | `huggingface-cli download`, GGUF model download, Python snapshots | [View Sheet](06-huggingface-cli-python-tricks/SHEET.md) |
+| **07. Termux Android** | Mobile Terminal | `termux-setup-storage`, `sshd` server on phone, `termux-wake-lock` | [View Sheet](07-termux-android-shortcuts/SHEET.md) |
 
 ---
 
 ## 📂 Repository Directory Structure
 
 ```
-BugFix-FM-Linux-Booklet/
-├── 01-file-system-and-permissions/        # SHEET.md (find, chmod, SUID, tar, df, du)
-├── 02-text-processing-grep-awk-sed/       # SHEET.md (grep, awk, sed, sort, uniq, cut)
-├── 03-networking-ports-firewall/          # SHEET.md (ip, ss, netstat, dig, curl, ufw)
-├── 04-process-systemd-resource-monitoring/ # SHEET.md (ps, kill, systemctl, journalctl, free)
-├── 05-users-groups-sudo-permissions/       # SHEET.md (id, usermod -aG, sudo -l, visudo)
-├── 06-kali-security-tools-cheatsheet/     # SHEET.md (nmap, subfinder, httpx, ffuf, hydra)
-└── README.md                              # Master Command Booklet Index
+BugFix-FM-Shortcut-Booklet/
+├── 01-linux-and-kali-shortcuts/        # SHEET.md (Ctrl+R, sudo !!, cd -, nohup)
+├── 02-vscode-keyboard-tricks/          # SHEET.md (Ctrl+P, Ctrl+Shift+P, Alt+Click, Ctrl+D)
+├── 03-github-and-git-shortcuts/        # SHEET.md (git log --oneline, git stash, GitHub . key)
+├── 04-docker-containers-tricks/        # SHEET.md (docker exec, docker stop/rm all, prune)
+├── 05-ollama-local-ai-tricks/          # SHEET.md (ollama run, list, ps, Modelfile)
+├── 06-huggingface-cli-python-tricks/   # SHEET.md (huggingface-cli download, GGUF, Python)
+├── 07-termux-android-shortcuts/        # SHEET.md (termux-setup-storage, pkg, sshd, wake-lock)
+└── README.md                           # Master Shortcut Booklet Index
 ```
 
 ---
-**🐧 BugFix FM Maintainer:** [Shubham Patel (techindro)](https://github.com)
+**⚡ BugFix FM Maintainer:** [Shubham Patel (techindro)](https://github.com)
