@@ -1,7 +1,22 @@
 # 💡 Module 28: 100-Day 100-Question LeetCode Practice Plan (C++ & Java)
 
 > [!TIP]
-> 🧠 **100 Days = 100 LeetCode Questions:** Practice 1 problem per day pattern-wise. Understand the **Approach Transformation** (from Brute Force $O(n^2)$ to Optimal $O(n)$). Complete working code implementations for top selected LeetCode questions in BOTH C++ and Java are provided below.
+> 🧠 **100 Days = 100 LeetCode Questions:** Practice 1 problem per day pattern-wise. Understand the **Approach Transformation** (from Brute Force $O(n^2)$ to Optimal $O(n)$). Simple real-life memory analogies and working C++ & Java code solutions are provided below.
+
+---
+
+## 🧠 Real-Life Memory Tricks for DSA Patterns (Easy to Remember)
+
+| DSA Pattern | Real-Life Memory Analogy | When to Apply (Trigger) |
+| :--- | :--- | :--- |
+| **1. Two Pointers** | Two friends starting at opposite ends of a hallway walking towards each other. | Sorted array + Target sum / Pair search. |
+| **2. Sliding Window** | Looking through a sliding glass window on a moving train. | Subarray / Substring asking for Min/Max length. |
+| **3. Fast & Slow Pointers** | Fast runner & slow jogger on a circular track—the fast runner laps the slow runner. | Linked List cycle detection or finding middle node. |
+| **4. Monotonic Stack** | Tall people standing in line blocking the view of shorter people behind them. | Finding Next Greater or Next Smaller Element. |
+| **5. Binary Search** | Playing "Guess a Number between 1 and 100" (Higher / Lower guesses). | Sorted search space or Min/Max feasibility. |
+| **6. Breadth-First Search (BFS)** | Water ripples expanding outward in concentric circles when dropping a pebble in a pond. | Shortest path in unweighted graph / Level order. |
+| **7. Depth-First Search (DFS)** | Exploring a deep maze as far as possible down one path before backtracking. | Connected components / Island problems. |
+| **8. Dynamic Programming** | Writing $1+1+1=3$ on paper. Add $+1$ ➔ You don't recount $1+1+1$, you remember $3$ and add $1=4$. | Overlapping subproblems + Counting ways / Min cost. |
 
 ---
 
@@ -170,6 +185,8 @@
 ## 💻 Full Code Solutions for Selected LeetCode Problems (C++ & Java)
 
 ### 1. LeetCode #15: 3Sum (Two Pointers)
+> 🧠 **Memory Hook:** Two friends walking towards each other from both ends of sorted array to match target sum `-nums[i]`.
+
 #### Approach Breakdown:
 - **Brute Force ($O(n^3)$):** Three nested loops checking all triplets `a + b + c == 0`.
 - **Optimal Two Pointers ($O(n^2)$ Time, $O(1)$ Extra Space):** Sort array. Loop index `i` from $0$ to $n-3$. Use two pointers `left = i+1` and `right = n-1` to find pairs matching `-nums[i]`. Skip duplicate elements.
@@ -235,6 +252,8 @@ public class Solution3Sum {
 ---
 
 ### 2. LeetCode #3: Longest Substring Without Repeating Characters (Sliding Window)
+> 🧠 **Memory Hook:** Sliding window on a train—expand window right, jump left pointer forward whenever a duplicate character enters the window.
+
 #### Approach Breakdown:
 - **Brute Force ($O(n^2)$):** Check every substring for uniqueness using a Set.
 - **Optimal Sliding Window ($O(n)$ Time):** Use Hash Map / Last Seen array to store last index of each character. Expand `right` pointer; if character repeated, jump `left` pointer to `last_seen[char] + 1`.
@@ -284,6 +303,8 @@ public class SolutionLongestSubstring {
 ---
 
 ### 3. LeetCode #739: Daily Temperatures (Monotonic Stack)
+> 🧠 **Memory Hook:** Tall people in line blocking shorter people—stack holds indices in decreasing order of temperature.
+
 #### Approach Breakdown:
 - **Brute Force ($O(n^2)$):** For each day, look forward in array to find next warmer day.
 - **Optimal Monotonic Decreasing Stack ($O(n)$ Time, $O(n)$ Space):** Push indices onto stack. When current temperature > temperature at top index of stack, pop index and calculate `day_diff = current_i - popped_i`.
@@ -336,6 +357,8 @@ public class SolutionDailyTemperatures {
 ---
 
 ### 4. LeetCode #200: Number of Islands (Graph DFS / BFS)
+> 🧠 **Memory Hook:** Sinking islands—when you land on `'1'`, trigger DFS to sink all connected `'1'` land cells to `'0'`.
+
 #### Approach Breakdown:
 - **Optimal Grid DFS ($O(M \times N)$ Time, $O(M \times N)$ Space):** Iterate through 2D grid. When `'1'` (land) is found, increment island count and trigger DFS to sink connected land cells (`'1'` ➔ `'0'`).
 
@@ -403,6 +426,8 @@ public class SolutionNumberIslands {
 ---
 
 ### 5. LeetCode #322: Coin Change (Dynamic Programming)
+> 🧠 **Memory Hook:** Don't recount coins from scratch—remember the min coins for `amount - coin` and add $1$.
+
 #### Approach Breakdown:
 - **Optimal Bottom-Up DP ($O(\text{amount} \times \text{coins.length})$ Time):** Build 1D DP table `dp[i]` storing min coins needed for amount $i$. Transition: `dp[i] = min(dp[i], 1 + dp[i - coin])`.
 
