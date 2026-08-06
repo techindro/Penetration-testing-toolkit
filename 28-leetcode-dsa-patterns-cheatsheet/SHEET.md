@@ -1,7 +1,7 @@
 # 💡 Module 28: 100-Day 100-Question LeetCode Practice Plan (C++ & Java)
 
 > [!TIP]
-> 🧠 **100 Days = 100 LeetCode Questions:** Practice 1 problem per day pattern-wise. Understand the **Approach Transformation** (from Brute Force $O(n^2)$ to Optimal $O(n)$). Both C++ and Java solutions are provided below.
+> 🧠 **100 Days = 100 LeetCode Questions:** Practice 1 problem per day pattern-wise. Understand the **Approach Transformation** (from Brute Force $O(n^2)$ to Optimal $O(n)$). Complete working code implementations for top selected LeetCode questions in BOTH C++ and Java are provided below.
 
 ---
 
@@ -167,89 +167,282 @@
 
 ---
 
-## ⚡ Pattern Code Templates (C++ & Java)
+## 💻 Full Code Solutions for Selected LeetCode Problems (C++ & Java)
 
-### 1. Two Pointers (Target Sum Pair Search)
+### 1. LeetCode #15: 3Sum (Two Pointers)
 #### Approach Breakdown:
-- **Brute Force ($O(n^2)$):** Check every pair with nested loops.
-- **Optimal ($O(n)$):** Sort array. Place `left` at 0 and `right` at end. Adjust based on sum vs target.
+- **Brute Force ($O(n^3)$):** Three nested loops checking all triplets `a + b + c == 0`.
+- **Optimal Two Pointers ($O(n^2)$ Time, $O(1)$ Extra Space):** Sort array. Loop index `i` from $0$ to $n-3$. Use two pointers `left = i+1` and `right = n-1` to find pairs matching `-nums[i]`. Skip duplicate elements.
 
 ```cpp
-// C++ Code
+// C++ Code - LeetCode #15 3Sum
 #include <vector>
+#include <algorithm>
 using namespace std;
 
-vector<int> twoSumTwoPointers(vector<int>& nums, int target) {
-    int left = 0, right = nums.size() - 1;
-    while (left < right) {
-        int sum = nums[left] + nums[right];
-        if (sum == target) return {left, right};
-        else if (sum < target) left++;
-        else right--;
+vector<vector<int>> threeSum(vector<int>& nums) {
+    vector<vector<int>> res;
+    sort(nums.begin(), nums.end());
+    int n = nums.size();
+    
+    for (int i = 0; i < n - 2; ++i) {
+        if (i > 0 && nums[i] == nums[i - 1]) continue; // Skip duplicate i
+        int left = i + 1, right = n - 1;
+        while (left < right) {
+            int sum = nums[i] + nums[left] + nums[right];
+            if (sum == 0) {
+                res.push_back({nums[i], nums[left], nums[right]});
+                while (left < right && nums[left] == nums[left + 1]) left++; // Skip duplicate left
+                while (left < right && nums[right] == nums[right - 1]) right--; // Skip duplicate right
+                left++; right--;
+            } else if (sum < 0) left++;
+            else right--;
+        }
     }
-    return {};
+    return res;
 }
 ```
 
 ```java
-// Java Code
-public class Solution {
-    public int[] twoSumTwoPointers(int[] nums, int target) {
-        int left = 0, right = nums.length - 1;
-        while (left < right) {
-            int sum = nums[left] + nums[right];
-            if (sum == target) return new int[]{left, right};
-            else if (sum < target) left++;
-            else right--;
+// Java Code - LeetCode #15 3Sum
+import java.util.*;
+
+public class Solution3Sum {
+    public List<List<Integer>> threeSum(int[] nums) {
+        List<List<Integer>> res = new ArrayList<>();
+        Arrays.sort(nums);
+        int n = nums.length;
+        
+        for (int i = 0; i < n - 2; i++) {
+            if (i > 0 && nums[i] == nums[i - 1]) continue;
+            int left = i + 1, right = n - 1;
+            while (left < right) {
+                int sum = nums[i] + nums[left] + nums[right];
+                if (sum == 0) {
+                    res.add(Arrays.asList(nums[i], nums[left], nums[right]));
+                    while (left < right && nums[left] == nums[left + 1]) left++;
+                    while (left < right && nums[right] == nums[right - 1]) right--;
+                    left++; right--;
+                } else if (sum < 0) left++;
+                else right--;
+            }
         }
-        return new int[]{};
+        return res;
     }
 }
 ```
 
 ---
 
-### 2. Fast & Slow Pointers (Cycle Detection)
+### 2. LeetCode #3: Longest Substring Without Repeating Characters (Sliding Window)
 #### Approach Breakdown:
-- **Brute Force ($O(n)$ Space):** Use Hash Set to store visited node references.
-- **Optimal ($O(1)$ Space):** Move `slow` by 1 step, `fast` by 2 steps. If cycle exists, they collide.
+- **Brute Force ($O(n^2)$):** Check every substring for uniqueness using a Set.
+- **Optimal Sliding Window ($O(n)$ Time):** Use Hash Map / Last Seen array to store last index of each character. Expand `right` pointer; if character repeated, jump `left` pointer to `last_seen[char] + 1`.
 
 ```cpp
-// C++ Code
-struct ListNode {
-    int val;
-    ListNode *next;
-    ListNode(int x) : val(x), next(nullptr) {}
-};
+// C++ Code - LeetCode #3
+#include <string>
+#include <vector>
+#include <algorithm>
+using namespace std;
 
-bool hasCycle(ListNode *head) {
-    ListNode *slow = head, *fast = head;
-    while (fast && fast->next) {
-        slow = slow->next;
-        fast = fast->next->next;
-        if (slow == fast) return true;
+int lengthOfLongestSubstring(string s) {
+    vector<int> last_seen(256, -1);
+    int max_len = 0, left = 0;
+    for (int right = 0; right < s.length(); ++right) {
+        if (last_seen[s[right]] >= left) {
+            left = last_seen[s[right]] + 1;
+        }
+        last_seen[s[right]] = right;
+        max_len = max(max_len, right - left + 1);
     }
-    return false;
+    return max_len;
 }
 ```
 
 ```java
-// Java Code
-class ListNode {
-    int val;
-    ListNode next;
-    ListNode(int x) { val = x; next = null; }
-}
+// Java Code - LeetCode #3
+import java.util.Arrays;
 
-public class Solution {
-    public boolean hasCycle(ListNode head) {
-        ListNode slow = head, fast = head;
-        while (fast != null && fast.next != null) {
-            slow = slow.next;
-            fast = fast.next.next;
-            if (slow == fast) return true;
+public class SolutionLongestSubstring {
+    public int lengthOfLongestSubstring(String s) {
+        int[] lastSeen = new int[256];
+        Arrays.fill(lastSeen, -1);
+        int maxLen = 0, left = 0;
+        for (int right = 0; right < s.length(); right++) {
+            if (lastSeen[s.charAt(right)] >= left) {
+                left = lastSeen[s.charAt(right)] + 1;
+            }
+            lastSeen[s.charAt(right)] = right;
+            maxLen = Math.max(maxLen, right - left + 1);
         }
-        return false;
+        return maxLen;
+    }
+}
+```
+
+---
+
+### 3. LeetCode #739: Daily Temperatures (Monotonic Stack)
+#### Approach Breakdown:
+- **Brute Force ($O(n^2)$):** For each day, look forward in array to find next warmer day.
+- **Optimal Monotonic Decreasing Stack ($O(n)$ Time, $O(n)$ Space):** Push indices onto stack. When current temperature > temperature at top index of stack, pop index and calculate `day_diff = current_i - popped_i`.
+
+```cpp
+// C++ Code - LeetCode #739 Daily Temperatures
+#include <vector>
+#include <stack>
+using namespace std;
+
+vector<int> dailyTemperatures(vector<int>& temperatures) {
+    int n = temperatures.size();
+    vector<int> res(n, 0);
+    stack<int> st; // Stores indices
+    
+    for (int i = 0; i < n; ++i) {
+        while (!st.empty() && temperatures[st.top()] < temperatures[i]) {
+            int idx = st.top();
+            st.pop();
+            res[idx] = i - idx;
+        }
+        st.push(i);
+    }
+    return res;
+}
+```
+
+```java
+// Java Code - LeetCode #739 Daily Temperatures
+import java.util.Stack;
+
+public class SolutionDailyTemperatures {
+    public int[] dailyTemperatures(int[] temperatures) {
+        int n = temperatures.length;
+        int[] res = new int[n];
+        Stack<Integer> st = new Stack<>();
+        
+        for (int i = 0; i < n; i++) {
+            while (!st.isEmpty() && temperatures[st.peek()] < temperatures[i]) {
+                int idx = st.pop();
+                res[idx] = i - idx;
+            }
+            st.push(i);
+        }
+        return res;
+    }
+}
+```
+
+---
+
+### 4. LeetCode #200: Number of Islands (Graph DFS / BFS)
+#### Approach Breakdown:
+- **Optimal Grid DFS ($O(M \times N)$ Time, $O(M \times N)$ Space):** Iterate through 2D grid. When `'1'` (land) is found, increment island count and trigger DFS to sink connected land cells (`'1'` ➔ `'0'`).
+
+```cpp
+// C++ Code - LeetCode #200 Number of Islands
+#include <vector>
+using namespace std;
+
+class SolutionNumberIslands {
+    void dfs(vector<vector<char>>& grid, int r, int c) {
+        int rows = grid.size(), cols = grid[0].size();
+        if (r < 0 || r >= rows || c < 0 || c >= cols || grid[r][c] == '0') return;
+        grid[r][c] = '0'; // Sink land
+        dfs(grid, r + 1, c);
+        dfs(grid, r - 1, c);
+        dfs(grid, r, c + 1);
+        dfs(grid, r, c - 1);
+    }
+public:
+    int numIslands(vector<vector<char>>& grid) {
+        if (grid.empty()) return 0;
+        int islands = 0;
+        for (int r = 0; r < grid.size(); ++r) {
+            for (int c = 0; c < grid[0].size(); ++c) {
+                if (grid[r][c] == '1') {
+                    islands++;
+                    dfs(grid, r, c);
+                }
+            }
+        }
+        return islands;
+    }
+};
+```
+
+```java
+// Java Code - LeetCode #200 Number of Islands
+public class SolutionNumberIslands {
+    private void dfs(char[][] grid, int r, int c) {
+        int rows = grid.length, cols = grid[0].length;
+        if (r < 0 || r >= rows || c < 0 || c >= cols || grid[r][c] == '0') return;
+        grid[r][c] = '0';
+        dfs(grid, r + 1, c);
+        dfs(grid, r - 1, c);
+        dfs(grid, r, c + 1);
+        dfs(grid, r, c - 1);
+    }
+
+    public int numIslands(char[][] grid) {
+        if (grid == null || grid.length == 0) return 0;
+        int islands = 0;
+        for (int r = 0; r < grid.length; r++) {
+            for (int c = 0; c < grid[0].length; c++) {
+                if (grid[r][c] == '1') {
+                    islands++;
+                    dfs(grid, r, c);
+                }
+            }
+        }
+        return islands;
+    }
+}
+```
+
+---
+
+### 5. LeetCode #322: Coin Change (Dynamic Programming)
+#### Approach Breakdown:
+- **Optimal Bottom-Up DP ($O(\text{amount} \times \text{coins.length})$ Time):** Build 1D DP table `dp[i]` storing min coins needed for amount $i$. Transition: `dp[i] = min(dp[i], 1 + dp[i - coin])`.
+
+```cpp
+// C++ Code - LeetCode #322 Coin Change
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+int coinChange(vector<int>& coins, int amount) {
+    vector<int> dp(amount + 1, amount + 1);
+    dp[0] = 0;
+    for (int i = 1; i <= amount; ++i) {
+        for (int coin : coins) {
+            if (i - coin >= 0) {
+                dp[i] = min(dp[i], 1 + dp[i - coin]);
+            }
+        }
+    }
+    return dp[amount] > amount ? -1 : dp[amount];
+}
+```
+
+```java
+// Java Code - LeetCode #322 Coin Change
+import java.util.Arrays;
+
+public class SolutionCoinChange {
+    public int coinChange(int[] coins, int amount) {
+        int[] dp = new int[amount + 1];
+        Arrays.fill(dp, amount + 1);
+        dp[0] = 0;
+        for (int i = 1; i <= amount; i++) {
+            for (int coin : coins) {
+                if (i - coin >= 0) {
+                    dp[i] = Math.min(dp[i], 1 + dp[i - coin]);
+                }
+            }
+        }
+        return dp[amount] > amount ? -1 : dp[amount];
     }
 }
 ```
