@@ -10,7 +10,7 @@
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-Yes-blue.svg?style=for-the-badge&logo=github)](https://github.com/techindro/Penetration-testing-toolkit)
 
 <p align="center">
-  <b>A complete landmark 35-module master booklet featuring Memory Hooks 🧠, Mnemonics, 30+ enumerated commands & formulas per sheet covering OWASP Top 10 Security, Data Science, AI/ML, Web Dev, CSE Core Engineering Subjects, MAANG Technical Interview Cheatsheets, and 50+ Professional Engineering Tools.</b>
+  <b>A complete landmark 35-module master booklet featuring Direct Raw Download Links 📥, Official Software Links 🌐, Memory Hooks 🧠, and 30+ enumerated commands & formulas per sheet covering OWASP Top 10 Security, Data Science, AI/ML, Web Dev, CSE Core Subjects, MAANG Interview Cheatsheets, and 50+ Tools.</b>
 </p>
 
 [Explore 35 Master Modules](#-35-master-shortcut-modules) • [Visual Architecture](#-ecosystem-architecture) • [External Resources](#-essential-resources)
@@ -21,13 +21,11 @@
 
 ## ✨ Why BugFix FM?
 
+- 📥 **Direct Raw Download Links:** Instantly download any Markdown sheet to your machine (`.md` raw links provided for all 35 modules).
+- 🌐 **Official Tool Software Links:** Quick links to official download pages for VS Code, Git, Docker, Kubernetes, Nginx, Terraform, AWS CLI, etc.
 - 🧠 **Memory Hooks & Mnemonics:** Packed with catchphrases, mnemonics (e.g. *All People Seem To Need Data Processing* for OSI 7 Layers), and instant visual memory triggers.
 - 📑 **30+ Commands & Formulas Per Sheet:** Every sheet is packed with 30 enumerated commands, formulas, shortcuts, and code snippets.
-- 🛡️ **Cybersecurity & OWASP Top 10 Suite:** OWASP Top 10 Vulnerabilities, Attack Examples, Remediation Code Templates & Security Auditing Tools.
-- 🤖 **Data Science & AI/ML Complete Suite:** NumPy, Pandas DataFrames, Scikit-Learn ML Models, PyTorch Neural Nets, TensorFlow/Keras Deep Learning.
 - 🎓 **Complete CSE Curriculum + Interview Cheatsheets:** Node.js, React.js, Next.js, DSA Big-O, C++ STL LeetCode Patterns, SQL Window Functions, System Design Estimation, OOP/SOLID, OSI/Networking, OS Deadlocks + 50+ Engineering Tools.
-- 🎯 **3-Level Structured Progression:** Commands and formulas categorized clearly into **Level 1 (Easy)**, **Level 2 (Medium)**, and **Level 3 (Advanced Pro Tricks)**.
-- 🗣️ **Natural Human Language:** Clear, jargon-free explanations of complex concepts, DAX formulas, regex, and CLI flags.
 - 🚀 **GitHub Browser Ready:** Press `.` on your keyboard anywhere in this repository to open full VS Code Web directly!
 
 ---
@@ -57,45 +55,45 @@ graph TD
 
 ---
 
-## 📌 35 Master Shortcut & Core Modules
+## 📌 35 Master Modules with Direct Raw Download Links
 
-| Module ID | Category / Subject | Core Focus & Highlighted Formulas | Booklet Link |
-| :-: | :--- | :--- | :-: |
-| **01** | **🐧 Linux & Kali Linux** | `cd ~` • `Ctrl+R` • `sudo !!` & `nohup` (30+ Commands) | [**Open Sheet**](01-linux-and-kali-shortcuts/SHEET.md) |
-| **02** | **💻 VS Code Editor** | `Ctrl+P` • `Ctrl+B` • `Alt+Click` multi-cursor & `Ctrl+D` (30 Shortcuts) | [**Open Sheet**](02-vscode-keyboard-tricks/SHEET.md) |
-| **03** | **🐙 Git & GitHub** | `git init` -> `git push origin main` • 🧠 Camera Photo Analogy (30 Commands) | [**Open Sheet**](03-github-and-git-shortcuts/SHEET.md) |
-| **04** | **🐳 Docker Containers** | `docker ps` • `docker exec -it` • `docker system prune -a` (30 Commands) | [**Open Sheet**](04-docker-containers-tricks/SHEET.md) |
-| **05** | **☸️ Kubernetes (kubectl)** | `kubectl get pods` • `port-forward` • `rollout undo` (30 Commands) | [**Open Sheet**](05-kubernetes-kubectl-tricks/SHEET.md) |
-| **06** | **📊 Tableau Analytics** | `Ctrl+W` • `IF/THEN` • FIXED / INCLUDE / EXCLUDE LOD | [**Open Sheet**](06-tableau-analytics-formulas/SHEET.md) |
-| **07** | **📈 Power BI DAX** | `SUM` • `CALCULATE` • `TOTALYTD` & YoY Growth % | [**Open Sheet**](07-powerbi-dax-formulas/SHEET.md) |
-| **08** | **📗 MS Excel Master** | `Alt+=` AutoSum • `XLOOKUP` & `SUMIFS` • `INDEX+MATCH` (30+ Formulas) | [**Open Sheet**](08-excel-master-formulas/SHEET.md) |
-| **09** | **🦙 Ollama Local AI** | `ollama run` • `ollama list` • Custom `Modelfile` creation | [**Open Sheet**](09-ollama-local-ai-tricks/SHEET.md) |
-| **10** | **🤗 Hugging Face** | `huggingface-cli download` • GGUF files • Python `snapshot_download` | [**Open Sheet**](10-huggingface-cli-python-tricks/SHEET.md) |
-| **11** | **📱 Termux Android** | `pkg update` • `termux-setup-storage` • `sshd` phone server | [**Open Sheet**](11-termux-android-shortcuts/SHEET.md) |
-| **12** | **⚙️ Jenkins CI/CD** | `cleanWs()` • Declarative `Jenkinsfile` • Curl API triggers | [**Open Sheet**](12-jenkins-cicd-shortcuts/SHEET.md) |
-| **13** | **📓 JupyterLab & Magic** | `Shift+Enter` • `A`/`B`/`D+D` • Magic `%timeit` & `%debug` | [**Open Sheet**](13-jupyterlab-keyboard-shortcuts/SHEET.md) |
-| **14** | **🛡️ Network Security** | `nc -zv` • `nmap -sS -sV` • `tcpdump` & `tshark` extraction | [**Open Sheet**](14-cyber-security-network-diagnostics/SHEET.md) |
-| **15** | **🗄️ Database CLI** | `psql \l` • `mongosh find()` • Redis `FLUSHALL` & keys | [**Open Sheet**](15-database-cli-shortcuts/SHEET.md) |
-| **16** | **🔣 Regex Formulas** | `\d+` & `\w+` • Email & IP regex • Positive Lookaheads `(?=...)` | [**Open Sheet**](16-regex-regular-expressions/SHEET.md) |
-| **17** | **📝 Markdown Syntax** | `# Header` • GFM Alerts `[!NOTE]` • KaTeX Math & Mermaid | [**Open Sheet**](17-markdown-syntax-cheatsheet/SHEET.md) |
-| **18** | **☁️ AWS Cloud CLI** | `aws s3 ls` • `aws configure` • `aws s3 sync` & STS identity | [**Open Sheet**](18-aws-cloud-cli-shortcuts/SHEET.md) |
-| **19** | **📜 Shell Scripting** | `export VAR` • Bash `for` loop • `crontab -e` & PowerShell regex | [**Open Sheet**](19-bash-powershell-scripting-shortcuts/SHEET.md) |
-| **20** | **🏗️ Terraform IaC** | `terraform init` • `terraform plan` & `apply` • `terraform state list` | [**Open Sheet**](20-terraform-iac-shortcuts/SHEET.md) |
-| **21** | **🌐 Nginx & Apache** | `nginx -t` • `nginx -s reload` • Reverse proxy `proxy_pass` | [**Open Sheet**](21-nginx-apache-webservers/SHEET.md) |
-| **22** | **📊 Prometheus & Grafana** | `node_load1` • `rate(http_requests_total[5m])` • `histogram_quantile` | [**Open Sheet**](22-prometheus-grafana-monitoring/SHEET.md) |
-| **23** | **⚡ DSA Big-O Complexity** | Big-O Order • Array/Tree Complexity • QuickSort vs MergeSort | [**Open Sheet**](23-dsa-data-structures-algorithms-complexity/SHEET.md) |
-| **24** | **🧩 OOP & Design Patterns** | 4 OOP Pillars • SOLID Principles • Singleton & Factory Patterns | [**Open Sheet**](24-oop-principles-design-patterns/SHEET.md) |
-| **25** | **🌐 Computer Networks** | 🧠 *All People Seem To Need Data Processing* • Ports (30 Items) | [**Open Sheet**](25-computer-networks-protocols-subnetting/SHEET.md) |
-| **26** | **💻 Operating Systems** | Process vs Thread • Round Robin Scheduling • 4 Deadlock Conditions | [**Open Sheet**](26-operating-systems-deadlock-scheduling/SHEET.md) |
-| **27** | **📐 System Design (HLD/LLD)** | Horizontal vs Vertical Scaling • LRU/LFU Caching • CAP Theorem | [**Open Sheet**](27-system-design-hld-lld-cap-theorem/SHEET.md) |
-| **28** | **💡 LeetCode Patterns (C++)** | Two Pointers • Sliding Window • Fast & Slow Pointers • Monotonic Stack | [**Open Sheet**](28-leetcode-dsa-patterns-cheatsheet/SHEET.md) |
-| **29** | **🗄️ SQL Interview Queries** | `ROW_NUMBER()`, `RANK()`, `DENSE_RANK()` • 2nd Highest Salary • CTE `WITH` | [**Open Sheet**](29-sql-queries-window-functions-joins/SHEET.md) |
-| **30** | **📐 System Design Estimation** | Latency Numbers • Powers of 2 Memory Table • QPS Calculation Formula | [**Open Sheet**](30-system-design-interview-estimation-formulas/SHEET.md) |
-| **31** | **🟢 Node.js & Express CLI** | `npm init -y` • `npx kill-port` • `node --watch` • Express template (30 Items) | [**Open Sheet**](31-nodejs-npm-express-cli-shortcuts/SHEET.md) |
-| **32** | **⚛️ React.js & Next.js** | `create vite` • `create-next-app` • `useState`/`useEffect` • Hooks (30 Items) | [**Open Sheet**](32-reactjs-vite-nextjs-hooks-shortcuts/SHEET.md) |
-| **33** | **🐍 NumPy & Pandas** | Arrays, `.reshape()`, `pd.read_csv()`, `.loc[]`, `.iloc[]`, `groupby()` (30 Items) | [**Open Sheet**](33-numpy-pandas-data-science-cheatsheet/SHEET.md) |
-| **34** | **🤖 PyTorch & TensorFlow** | `train_test_split`, PyTorch Tensors, CUDA GPU, Keras Sequential (30 Items) | [**Open Sheet**](34-scikit-learn-tensorflow-pytorch-ai-cheatsheet/SHEET.md) |
-| **35** | **🛡️ OWASP Top 10 Security** | Broken Access, SQLi, XSS, SSRF, Bcrypt hashing, Security Audit (30 Items) | [**Open Sheet**](35-cyber-security-owasp-top-10-cheatsheet/SHEET.md) |
+| Module ID | Category / Subject | View Sheet | Direct RAW Download | Official Software |
+| :-: | :--- | :-: | :-: | :-: |
+| **01** | **🐧 Linux & Kali Linux** | [Open Sheet](01-linux-and-kali-shortcuts/SHEET.md) | [📥 Download RAW](https://raw.githubusercontent.com/techindro/Penetration-testing-toolkit/main/01-linux-and-kali-shortcuts/SHEET.md) | [Official Linux](https://www.kali.org/) |
+| **02** | **💻 VS Code Editor** | [Open Sheet](02-vscode-keyboard-tricks/SHEET.md) | [📥 Download RAW](https://raw.githubusercontent.com/techindro/Penetration-testing-toolkit/main/02-vscode-keyboard-tricks/SHEET.md) | [Get VS Code](https://code.visualstudio.com/) |
+| **03** | **🐙 Git & GitHub** | [Open Sheet](03-github-and-git-shortcuts/SHEET.md) | [📥 Download RAW](https://raw.githubusercontent.com/techindro/Penetration-testing-toolkit/main/03-github-and-git-shortcuts/SHEET.md) | [Get Git CLI](https://git-scm.com/) |
+| **04** | **🐳 Docker Containers** | [Open Sheet](04-docker-containers-tricks/SHEET.md) | [📥 Download RAW](https://raw.githubusercontent.com/techindro/Penetration-testing-toolkit/main/04-docker-containers-tricks/SHEET.md) | [Get Docker](https://www.docker.com/) |
+| **05** | **☸️ Kubernetes (kubectl)** | [Open Sheet](05-kubernetes-kubectl-tricks/SHEET.md) | [📥 Download RAW](https://raw.githubusercontent.com/techindro/Penetration-testing-toolkit/main/05-kubernetes-kubectl-tricks/SHEET.md) | [Get Kubectl](https://kubernetes.io/) |
+| **06** | **📊 Tableau Analytics** | [Open Sheet](06-tableau-analytics-formulas/SHEET.md) | [📥 Download RAW](https://raw.githubusercontent.com/techindro/Penetration-testing-toolkit/main/06-tableau-analytics-formulas/SHEET.md) | [Get Tableau](https://www.tableau.com/) |
+| **07** | **📈 Power BI DAX** | [Open Sheet](07-powerbi-dax-formulas/SHEET.md) | [📥 Download RAW](https://raw.githubusercontent.com/techindro/Penetration-testing-toolkit/main/07-powerbi-dax-formulas/SHEET.md) | [Get Power BI](https://powerbi.microsoft.com/) |
+| **08** | **📗 MS Excel Master** | [Open Sheet](08-excel-master-formulas/SHEET.md) | [📥 Download RAW](https://raw.githubusercontent.com/techindro/Penetration-testing-toolkit/main/08-excel-master-formulas/SHEET.md) | [Get MS Excel](https://www.microsoft.com/excel) |
+| **09** | **🦙 Ollama Local AI** | [Open Sheet](09-ollama-local-ai-tricks/SHEET.md) | [📥 Download RAW](https://raw.githubusercontent.com/techindro/Penetration-testing-toolkit/main/09-ollama-local-ai-tricks/SHEET.md) | [Get Ollama](https://ollama.com/) |
+| **10** | **🤗 Hugging Face** | [Open Sheet](10-huggingface-cli-python-tricks/SHEET.md) | [📥 Download RAW](https://raw.githubusercontent.com/techindro/Penetration-testing-toolkit/main/10-huggingface-cli-python-tricks/SHEET.md) | [Hugging Face](https://huggingface.co/) |
+| **11** | **📱 Termux Android** | [Open Sheet](11-termux-android-shortcuts/SHEET.md) | [📥 Download RAW](https://raw.githubusercontent.com/techindro/Penetration-testing-toolkit/main/11-termux-android-shortcuts/SHEET.md) | [Get Termux](https://f-droid.org/packages/com.termux/) |
+| **12** | **⚙️ Jenkins CI/CD** | [Open Sheet](12-jenkins-cicd-shortcuts/SHEET.md) | [📥 Download RAW](https://raw.githubusercontent.com/techindro/Penetration-testing-toolkit/main/12-jenkins-cicd-shortcuts/SHEET.md) | [Get Jenkins](https://www.jenkins.io/) |
+| **13** | **📓 JupyterLab & Magic** | [Open Sheet](13-jupyterlab-keyboard-shortcuts/SHEET.md) | [📥 Download RAW](https://raw.githubusercontent.com/techindro/Penetration-testing-toolkit/main/13-jupyterlab-keyboard-shortcuts/SHEET.md) | [Get Jupyter](https://jupyter.org/) |
+| **14** | **🛡️ Network Security** | [Open Sheet](14-cyber-security-network-diagnostics/SHEET.md) | [📥 Download RAW](https://raw.githubusercontent.com/techindro/Penetration-testing-toolkit/main/14-cyber-security-network-diagnostics/SHEET.md) | [Get Nmap](https://nmap.org/) |
+| **15** | **🗄️ Database CLI** | [Open Sheet](15-database-cli-shortcuts/SHEET.md) | [📥 Download RAW](https://raw.githubusercontent.com/techindro/Penetration-testing-toolkit/main/15-database-cli-shortcuts/SHEET.md) | [PostgreSQL](https://www.postgresql.org/) |
+| **16** | **🔣 Regex Formulas** | [Open Sheet](16-regex-regular-expressions/SHEET.md) | [📥 Download RAW](https://raw.githubusercontent.com/techindro/Penetration-testing-toolkit/main/16-regex-regular-expressions/SHEET.md) | [Regex101](https://regex101.com/) |
+| **17** | **📝 Markdown Syntax** | [Open Sheet](17-markdown-syntax-cheatsheet/SHEET.md) | [📥 Download RAW](https://raw.githubusercontent.com/techindro/Penetration-testing-toolkit/main/17-markdown-syntax-cheatsheet/SHEET.md) | [GFM Guide](https://github.github.com/gfm/) |
+| **18** | **☁️ AWS Cloud CLI** | [Open Sheet](18-aws-cloud-cli-shortcuts/SHEET.md) | [📥 Download RAW](https://raw.githubusercontent.com/techindro/Penetration-testing-toolkit/main/18-aws-cloud-cli-shortcuts/SHEET.md) | [Get AWS CLI](https://aws.amazon.com/cli/) |
+| **19** | **📜 Shell Scripting** | [Open Sheet](19-bash-powershell-scripting-shortcuts/SHEET.md) | [📥 Download RAW](https://raw.githubusercontent.com/techindro/Penetration-testing-toolkit/main/19-bash-powershell-scripting-shortcuts/SHEET.md) | [PowerShell](https://github.com/PowerShell/PowerShell) |
+| **20** | **🏗️ Terraform IaC** | [Open Sheet](20-terraform-iac-shortcuts/SHEET.md) | [📥 Download RAW](https://raw.githubusercontent.com/techindro/Penetration-testing-toolkit/main/20-terraform-iac-shortcuts/SHEET.md) | [Get Terraform](https://www.terraform.io/) |
+| **21** | **🌐 Nginx & Apache** | [Open Sheet](21-nginx-apache-webservers/SHEET.md) | [📥 Download RAW](https://raw.githubusercontent.com/techindro/Penetration-testing-toolkit/main/21-nginx-apache-webservers/SHEET.md) | [Get Nginx](https://nginx.org/) |
+| **22** | **📊 Prometheus & Grafana** | [Open Sheet](22-prometheus-grafana-monitoring/SHEET.md) | [📥 Download RAW](https://raw.githubusercontent.com/techindro/Penetration-testing-toolkit/main/22-prometheus-grafana-monitoring/SHEET.md) | [Get Grafana](https://grafana.com/) |
+| **23** | **⚡ DSA Big-O Complexity** | [Open Sheet](23-dsa-data-structures-algorithms-complexity/SHEET.md) | [📥 Download RAW](https://raw.githubusercontent.com/techindro/Penetration-testing-toolkit/main/23-dsa-data-structures-algorithms-complexity/SHEET.md) | [Big-O CheatSheet](https://www.bigocheatsheet.com/) |
+| **24** | **🧩 OOP & Design Patterns** | [Open Sheet](24-oop-principles-design-patterns/SHEET.md) | [📥 Download RAW](https://raw.githubusercontent.com/techindro/Penetration-testing-toolkit/main/24-oop-principles-design-patterns/SHEET.md) | [Refactoring Guru](https://refactoring.guru/) |
+| **25** | **🌐 Computer Networks** | [Open Sheet](25-computer-networks-protocols-subnetting/SHEET.md) | [📥 Download RAW](https://raw.githubusercontent.com/techindro/Penetration-testing-toolkit/main/25-computer-networks-protocols-subnetting/SHEET.md) | [Wireshark](https://www.wireshark.org/) |
+| **26** | **💻 Operating Systems** | [Open Sheet](26-operating-systems-deadlock-scheduling/SHEET.md) | [📥 Download RAW](https://raw.githubusercontent.com/techindro/Penetration-testing-toolkit/main/26-operating-systems-deadlock-scheduling/SHEET.md) | [Ubuntu OS](https://ubuntu.com/) |
+| **27** | **📐 System Design (HLD/LLD)** | [Open Sheet](27-system-design-hld-lld-cap-theorem/SHEET.md) | [📥 Download RAW](https://raw.githubusercontent.com/techindro/Penetration-testing-toolkit/main/27-system-design-hld-lld-cap-theorem/SHEET.md) | [ByteByteGo](https://bytebytego.com/) |
+| **28** | **💡 LeetCode Patterns (C++)** | [Open Sheet](28-leetcode-dsa-patterns-cheatsheet/SHEET.md) | [📥 Download RAW](https://raw.githubusercontent.com/techindro/Penetration-testing-toolkit/main/28-leetcode-dsa-patterns-cheatsheet/SHEET.md) | [LeetCode](https://leetcode.com/) |
+| **29** | **🗄️ SQL Interview Queries** | [Open Sheet](29-sql-queries-window-functions-joins/SHEET.md) | [📥 Download RAW](https://raw.githubusercontent.com/techindro/Penetration-testing-toolkit/main/29-sql-queries-window-functions-joins/SHEET.md) | [SQLZoo](https://sqlzoo.net/) |
+| **30** | **📐 System Design Estimation** | [Open Sheet](30-system-design-interview-estimation-formulas/SHEET.md) | [📥 Download RAW](https://raw.githubusercontent.com/techindro/Penetration-testing-toolkit/main/30-system-design-interview-estimation-formulas/SHEET.md) | [System Design Primer](https://github.com/donnemartin/system-design-primer) |
+| **31** | **🟢 Node.js & Express CLI** | [Open Sheet](31-nodejs-npm-express-cli-shortcuts/SHEET.md) | [📥 Download RAW](https://raw.githubusercontent.com/techindro/Penetration-testing-toolkit/main/31-nodejs-npm-express-cli-shortcuts/SHEET.md) | [Get Node.js](https://nodejs.org/) |
+| **32** | **⚛️ React.js & Next.js** | [Open Sheet](32-reactjs-vite-nextjs-hooks-shortcuts/SHEET.md) | [📥 Download RAW](https://raw.githubusercontent.com/techindro/Penetration-testing-toolkit/main/32-reactjs-vite-nextjs-hooks-shortcuts/SHEET.md) | [Get Next.js](https://nextjs.org/) |
+| **33** | **🐍 NumPy & Pandas** | [Open Sheet](33-numpy-pandas-data-science-cheatsheet/SHEET.md) | [📥 Download RAW](https://raw.githubusercontent.com/techindro/Penetration-testing-toolkit/main/33-numpy-pandas-data-science-cheatsheet/SHEET.md) | [NumPy](https://numpy.org/) |
+| **34** | **🤖 PyTorch & TensorFlow** | [Open Sheet](34-scikit-learn-tensorflow-pytorch-ai-cheatsheet/SHEET.md) | [📥 Download RAW](https://raw.githubusercontent.com/techindro/Penetration-testing-toolkit/main/34-scikit-learn-tensorflow-pytorch-ai-cheatsheet/SHEET.md) | [PyTorch](https://pytorch.org/) |
+| **35** | **🛡️ OWASP Top 10 Security** | [Open Sheet](35-cyber-security-owasp-top-10-cheatsheet/SHEET.md) | [📥 Download RAW](https://raw.githubusercontent.com/techindro/Penetration-testing-toolkit/main/35-cyber-security-owasp-top-10-cheatsheet/SHEET.md) | [OWASP Org](https://owasp.org/) |
 
 ---
 
