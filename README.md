@@ -1,7 +1,7 @@
 <div align="center">
 
 # 📻 BugFix FM
-### *The Ultimate 30-Module CSE Core Subjects, Interview Cheatsheets & 30+ Items Per Sheet Master Booklet*
+### *The Ultimate 32-Module CSE Core Subjects, Interview Cheatsheets & 30+ Items Per Sheet Master Booklet*
 
 [![GitHub Stars](https://img.shields.io/github/stars/techindro/Penetration-testing-toolkit?style=for-the-badge&logo=github&color=6366f1)](https://github.com/techindro/Penetration-testing-toolkit/stargazers)
 [![GitHub Forks](https://img.shields.io/github/forks/techindro/Penetration-testing-toolkit?style=for-the-badge&logo=github&color=a855f7)](https://github.com/techindro/Penetration-testing-toolkit/network/members)
@@ -10,10 +10,10 @@
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-Yes-blue.svg?style=for-the-badge&logo=github)](https://github.com/techindro/Penetration-testing-toolkit)
 
 <p align="center">
-  <b>A complete 30-module master booklet featuring 30+ enumerated commands & formulas per sheet covering CSE Core Engineering Subjects, MAANG Technical Interview Cheatsheets, and 35+ Professional Engineering Tools.</b>
+  <b>A complete 32-module master booklet featuring 30+ enumerated commands & formulas per sheet covering Node.js, React.js, Next.js, CSE Core Engineering Subjects, MAANG Technical Interview Cheatsheets, and 35+ Professional Engineering Tools.</b>
 </p>
 
-[Explore 30 Master Modules](#-30-master-shortcut-modules) • [Visual Architecture](#-ecosystem-architecture) • [External Resources](#-essential-resources)
+[Explore 32 Master Modules](#-32-master-shortcut-modules) • [Visual Architecture](#-ecosystem-architecture) • [External Resources](#-essential-resources)
 
 </div>
 
@@ -22,7 +22,7 @@
 ## ✨ Why BugFix FM?
 
 - 📑 **30+ Commands & Formulas Per Sheet:** Every sheet is packed with 30 enumerated commands, formulas, shortcuts, and code snippets.
-- 🎓 **Complete CSE Curriculum + Interview Cheatsheets:** DSA Big-O, C++ STL LeetCode Patterns, SQL Window Functions, System Design Estimation, OOP/SOLID, OSI/Networking, OS Deadlocks + 35+ Engineering Tools.
+- 🎓 **Complete CSE Curriculum + Interview Cheatsheets:** Node.js, React.js, Next.js, DSA Big-O, C++ STL LeetCode Patterns, SQL Window Functions, System Design Estimation, OOP/SOLID, OSI/Networking, OS Deadlocks + 35+ Engineering Tools.
 - 🎯 **3-Level Structured Progression:** Commands and formulas categorized clearly into **Level 1 (Easy)**, **Level 2 (Medium)**, and **Level 3 (Advanced Pro Tricks)**.
 - 🗣️ **Natural Human Language:** Clear, jargon-free explanations of complex concepts, DAX formulas, regex, and CLI flags.
 - 💡 **Real-World Practical Examples:** Every single shortcut, formula, DAX measure, XLOOKUP, and CLI tool includes a concrete usage example.
@@ -38,8 +38,8 @@ graph TD
         A1["⚡ 23. DSA Big-O"] --- A2["💡 28. LeetCode Patterns (C++)"] --- A3["🗄️ 29. SQL Window Functions"] --- A4["📐 30. System Design Estimation"] --- A5["🧩 24. OOP & SOLID"] --- A6["🌐 25. Computer Networks"] --- A7["💻 26. OS & Deadlocks"] --- A8["📐 27. System Design HLD/LLD"]
     end
 
-    subgraph Phase2["💻 Phase 2: OS, Editor, Version Control & Shell"]
-        B1["🐧 Linux & Kali CLI"] --- B2["💻 VS Code Shortcuts"] --- B3["🐙 Git & GitHub"] --- B4["📜 Bash & PowerShell"] --- B5["🔣 Regex Formulas"] --- B6["📝 Markdown Syntax"]
+    subgraph Phase2["💻 Phase 2: OS, Editor, Version Control, Web & Shell"]
+        B1["🐧 Linux & Kali CLI"] --- B2["💻 VS Code Shortcuts"] --- B3["🐙 Git & GitHub"] --- B4["📜 Bash & PowerShell"] --- B5["🔣 Regex Formulas"] --- B6["📝 Markdown Syntax"] --- B7["🟢 31. Node.js & NPM CLI"] --- B8["⚛️ 32. React.js & Next.js"]
     end
 
     subgraph Phase3["☁️ Phase 3: Containers, Cloud, IaC, DevOps, WebServers & DB"]
@@ -55,7 +55,7 @@ graph TD
 
 ---
 
-## 📌 30 Master Shortcut & Core Modules
+## 📌 32 Master Shortcut & Core Modules
 
 | Module ID | Category / Subject | Core Focus & Highlighted Formulas | Booklet Link |
 | :-: | :--- | :--- | :-: |
@@ -89,6 +89,8 @@ graph TD
 | **28** | **💡 LeetCode Patterns (C++)** | Two Pointers • Sliding Window • Fast & Slow Pointers • Monotonic Stack | [**Open Sheet**](28-leetcode-dsa-patterns-cheatsheet/SHEET.md) |
 | **29** | **🗄️ SQL Interview Queries** | `ROW_NUMBER()`, `RANK()`, `DENSE_RANK()` • 2nd Highest Salary • CTE `WITH` | [**Open Sheet**](29-sql-queries-window-functions-joins/SHEET.md) |
 | **30** | **📐 System Design Estimation** | Latency Numbers • Powers of 2 Memory Table • QPS Calculation Formula | [**Open Sheet**](30-system-design-interview-estimation-formulas/SHEET.md) |
+| **31** | **🟢 Node.js & Express CLI** | `npm init -y` • `npx kill-port` • `node --watch` • Express template (30 Items) | [**Open Sheet**](31-nodejs-npm-express-cli-shortcuts/SHEET.md) |
+| **32** | **⚛️ React.js & Next.js** | `create vite` • `create-next-app` • `useState`/`useEffect` • Hooks (30 Items) | [**Open Sheet**](32-reactjs-vite-nextjs-hooks-shortcuts/SHEET.md) |
 
 ---
 
@@ -135,6 +137,8 @@ BugFix-FM-Master-Shortcut-Booklet/
 ├── 28-leetcode-dsa-patterns-cheatsheet/          # SHEET.md (C++ STL Code)
 ├── 29-sql-queries-window-functions-joins/        # SHEET.md (Easy -> Medium -> Hard)
 ├── 30-system-design-interview-estimation-formulas/# SHEET.md (Easy -> Medium -> Hard)
+├── 31-nodejs-npm-express-cli-shortcuts/          # SHEET.md (30 Items: Easy -> Medium -> Hard)
+├── 32-reactjs-vite-nextjs-hooks-shortcuts/       # SHEET.md (30 Items: Easy -> Medium -> Hard)
 └── README.md                           # Master Booklet Entry
 ```
 
