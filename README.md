@@ -10,7 +10,7 @@
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-Yes-blue.svg?style=for-the-badge&logo=github)](https://github.com/techindro/Penetration-testing-toolkit)
 
 <p align="center">
-  <b>A complete landmark 35-module master booklet featuring 30+ enumerated commands & formulas per sheet covering OWASP Top 10 Security, NumPy, Pandas, Scikit-Learn, PyTorch, TensorFlow, Node.js, React.js, Next.js, CSE Core Engineering Subjects, MAANG Technical Interview Cheatsheets, and 50+ Professional Engineering Tools.</b>
+  <b>A complete landmark 35-module master booklet featuring Memory Hooks 🧠, Mnemonics, 30+ enumerated commands & formulas per sheet covering OWASP Top 10 Security, Data Science, AI/ML, Web Dev, CSE Core Engineering Subjects, MAANG Technical Interview Cheatsheets, and 50+ Professional Engineering Tools.</b>
 </p>
 
 [Explore 35 Master Modules](#-35-master-shortcut-modules) • [Visual Architecture](#-ecosystem-architecture) • [External Resources](#-essential-resources)
@@ -21,13 +21,13 @@
 
 ## ✨ Why BugFix FM?
 
+- 🧠 **Memory Hooks & Mnemonics:** Packed with catchphrases, mnemonics (e.g. *All People Seem To Need Data Processing* for OSI 7 Layers), and instant visual memory triggers.
 - 📑 **30+ Commands & Formulas Per Sheet:** Every sheet is packed with 30 enumerated commands, formulas, shortcuts, and code snippets.
 - 🛡️ **Cybersecurity & OWASP Top 10 Suite:** OWASP Top 10 Vulnerabilities, Attack Examples, Remediation Code Templates & Security Auditing Tools.
 - 🤖 **Data Science & AI/ML Complete Suite:** NumPy, Pandas DataFrames, Scikit-Learn ML Models, PyTorch Neural Nets, TensorFlow/Keras Deep Learning.
 - 🎓 **Complete CSE Curriculum + Interview Cheatsheets:** Node.js, React.js, Next.js, DSA Big-O, C++ STL LeetCode Patterns, SQL Window Functions, System Design Estimation, OOP/SOLID, OSI/Networking, OS Deadlocks + 50+ Engineering Tools.
 - 🎯 **3-Level Structured Progression:** Commands and formulas categorized clearly into **Level 1 (Easy)**, **Level 2 (Medium)**, and **Level 3 (Advanced Pro Tricks)**.
 - 🗣️ **Natural Human Language:** Clear, jargon-free explanations of complex concepts, DAX formulas, regex, and CLI flags.
-- 💡 **Real-World Practical Examples:** Every single shortcut, formula, DAX measure, XLOOKUP, and CLI tool includes a concrete usage example.
 - 🚀 **GitHub Browser Ready:** Press `.` on your keyboard anywhere in this repository to open full VS Code Web directly!
 
 ---
@@ -63,7 +63,7 @@ graph TD
 | :-: | :--- | :--- | :-: |
 | **01** | **🐧 Linux & Kali Linux** | `cd ~` • `Ctrl+R` • `sudo !!` & `nohup` (30+ Commands) | [**Open Sheet**](01-linux-and-kali-shortcuts/SHEET.md) |
 | **02** | **💻 VS Code Editor** | `Ctrl+P` • `Ctrl+B` • `Alt+Click` multi-cursor & `Ctrl+D` (30 Shortcuts) | [**Open Sheet**](02-vscode-keyboard-tricks/SHEET.md) |
-| **03** | **🐙 Git & GitHub** | `git init` -> `git push origin main` • `git stash` • `git reset` (30 Commands) | [**Open Sheet**](03-github-and-git-shortcuts/SHEET.md) |
+| **03** | **🐙 Git & GitHub** | `git init` -> `git push origin main` • 🧠 Camera Photo Analogy (30 Commands) | [**Open Sheet**](03-github-and-git-shortcuts/SHEET.md) |
 | **04** | **🐳 Docker Containers** | `docker ps` • `docker exec -it` • `docker system prune -a` (30 Commands) | [**Open Sheet**](04-docker-containers-tricks/SHEET.md) |
 | **05** | **☸️ Kubernetes (kubectl)** | `kubectl get pods` • `port-forward` • `rollout undo` (30 Commands) | [**Open Sheet**](05-kubernetes-kubectl-tricks/SHEET.md) |
 | **06** | **📊 Tableau Analytics** | `Ctrl+W` • `IF/THEN` • FIXED / INCLUDE / EXCLUDE LOD | [**Open Sheet**](06-tableau-analytics-formulas/SHEET.md) |
@@ -85,7 +85,7 @@ graph TD
 | **22** | **📊 Prometheus & Grafana** | `node_load1` • `rate(http_requests_total[5m])` • `histogram_quantile` | [**Open Sheet**](22-prometheus-grafana-monitoring/SHEET.md) |
 | **23** | **⚡ DSA Big-O Complexity** | Big-O Order • Array/Tree Complexity • QuickSort vs MergeSort | [**Open Sheet**](23-dsa-data-structures-algorithms-complexity/SHEET.md) |
 | **24** | **🧩 OOP & Design Patterns** | 4 OOP Pillars • SOLID Principles • Singleton & Factory Patterns | [**Open Sheet**](24-oop-principles-design-patterns/SHEET.md) |
-| **25** | **🌐 Computer Networks** | 7 OSI Layers • Ports 80, 443, 3306, 5432 • IPv4 Subnetting Formulas | [**Open Sheet**](25-computer-networks-protocols-subnetting/SHEET.md) |
+| **25** | **🌐 Computer Networks** | 🧠 *All People Seem To Need Data Processing* • Ports (30 Items) | [**Open Sheet**](25-computer-networks-protocols-subnetting/SHEET.md) |
 | **26** | **💻 Operating Systems** | Process vs Thread • Round Robin Scheduling • 4 Deadlock Conditions | [**Open Sheet**](26-operating-systems-deadlock-scheduling/SHEET.md) |
 | **27** | **📐 System Design (HLD/LLD)** | Horizontal vs Vertical Scaling • LRU/LFU Caching • CAP Theorem | [**Open Sheet**](27-system-design-hld-lld-cap-theorem/SHEET.md) |
 | **28** | **💡 LeetCode Patterns (C++)** | Two Pointers • Sliding Window • Fast & Slow Pointers • Monotonic Stack | [**Open Sheet**](28-leetcode-dsa-patterns-cheatsheet/SHEET.md) |
@@ -114,7 +114,7 @@ graph TD
 BugFix-FM-Master-Shortcut-Booklet/
 ├── 01-linux-and-kali-shortcuts/        # SHEET.md (30+ Commands: Easy -> Medium -> Hard)
 ├── 02-vscode-keyboard-tricks/          # SHEET.md (30 Shortcuts: Easy -> Medium -> Hard)
-├── 03-github-and-git-shortcuts/        # SHEET.md (30 Commands: Easy -> Medium -> Hard)
+├── 03-github-and-git-shortcuts/        # SHEET.md (30 Commands + Camera Photo Mnemonic)
 ├── 04-docker-containers-tricks/        # SHEET.md (30 Commands: Easy -> Medium -> Hard)
 ├── 05-kubernetes-kubectl-tricks/       # SHEET.md (30 Commands: Easy -> Medium -> Hard)
 ├── 06-tableau-analytics-formulas/      # SHEET.md (Easy -> Medium -> Hard)
@@ -136,7 +136,7 @@ BugFix-FM-Master-Shortcut-Booklet/
 ├── 22-prometheus-grafana-monitoring/   # SHEET.md (Easy -> Medium -> Hard)
 ├── 23-dsa-data-structures-algorithms-complexity/ # SHEET.md (Easy -> Medium -> Hard)
 ├── 24-oop-principles-design-patterns/  # SHEET.md (Easy -> Medium -> Hard)
-├── 25-computer-networks-protocols-subnetting/    # SHEET.md (Easy -> Medium -> Hard)
+├── 25-computer-networks-protocols-subnetting/    # SHEET.md (OSI Mnemonic + Ports Memory Hooks)
 ├── 26-operating-systems-deadlock-scheduling/     # SHEET.md (Easy -> Medium -> Hard)
 ├── 27-system-design-hld-lld-cap-theorem/         # SHEET.md (Easy -> Medium -> Hard)
 ├── 28-leetcode-dsa-patterns-cheatsheet/          # SHEET.md (C++ STL Code)
