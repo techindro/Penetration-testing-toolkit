@@ -1,7 +1,7 @@
 <div align="center">
 
 # 📻 BugFix FM
-### *The Ultimate Professional Developer, Cloud, DevOps, Database & Analytics Master Shortcut Booklet*
+### *The Ultimate 35+ Tools Master Shortcut & Formula Booklet*
 
 [![GitHub Stars](https://img.shields.io/github/stars/techindro/Penetration-testing-toolkit?style=for-the-badge&logo=github&color=6366f1)](https://github.com/techindro/Penetration-testing-toolkit/stargazers)
 [![GitHub Forks](https://img.shields.io/github/forks/techindro/Penetration-testing-toolkit?style=for-the-badge&logo=github&color=a855f7)](https://github.com/techindro/Penetration-testing-toolkit/network/members)
@@ -10,10 +10,10 @@
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-Yes-blue.svg?style=for-the-badge&logo=github)](https://github.com/techindro/Penetration-testing-toolkit)
 
 <p align="center">
-  <b>A curated, daily-use shortcut & formula booklet categorized by difficulty level (🟢 Easy, 🟡 Medium, 🔴 Hard) across 19 core engineering and analytics domains.</b>
+  <b>A curated, daily-use master shortcut & formula booklet categorized by difficulty level (🟢 Easy, 🟡 Medium, 🔴 Hard) across 35+ core professional developer, cloud, DevOps, AI, and analytics tools.</b>
 </p>
 
-[Explore Booklet Modules](#-19-master-shortcut-modules) • [Visual Architecture](#-ecosystem-architecture) • [External Resources](#-essential-resources)
+[Explore 22 Booklet Modules](#-22-master-shortcut-modules) • [Visual Architecture](#-ecosystem-architecture) • [External Resources](#-essential-resources)
 
 </div>
 
@@ -21,10 +21,10 @@
 
 ## ✨ Why BugFix FM?
 
+- 🛠️ **35+ Professional Tools Covered:** Linux, Kali Linux, VS Code, Git, GitHub, Docker, Compose, Kubernetes, Terraform, Nginx, Apache, Prometheus, Grafana, AWS CLI, Tableau, Power BI DAX, MS Excel, Ollama, Hugging Face, Termux, Jenkins, JupyterLab, Nmap, Tcpdump, Tshark, Netcat, PostgreSQL, MySQL, MongoDB, Redis, Regex, Markdown, Bash, PowerShell.
 - 🎯 **3-Level Difficulty Classification:** Commands categorized into 🟢 **Level 1 (Easy)**, 🟡 **Level 2 (Medium)**, and 🔴 **Level 3 (Hard Pro Tricks)**.
 - 🗣️ **Natural Human Language:** Clear, jargon-free explanations of complex commands, DAX formulas, regex, and CLI flags.
 - 💡 **Real-World Practical Examples:** Every single shortcut, formula, DAX measure, XLOOKUP, and CLI tool includes a concrete usage example.
-- ⚡ **Zero Setup Required:** Pure, lightweight GitHub Markdown sheets optimized for fast searching and instant viewing.
 - 🚀 **GitHub Browser Ready:** Press `.` on your keyboard anywhere in this repository to open full VS Code Web directly!
 
 ---
@@ -34,11 +34,11 @@
 ```mermaid
 graph TD
     subgraph Phase1["💻 Phase 1: Operating System, Editor, Version Control & Shell"]
-        A1["🐧 Linux & Kali CLI"] --- A2["💻 VS Code Shortcuts"] --- A3["🐙 Git & GitHub Workflow"] --- A4["📜 Bash & PowerShell"] --- A5["🔣 Regex Formulas"] --- A6["📝 Markdown Syntax"]
+        A1["🐧 Linux & Kali CLI"] --- A2["💻 VS Code Shortcuts"] --- A3["🐙 Git & GitHub"] --- A4["📜 Bash & PowerShell"] --- A5["🔣 Regex Formulas"] --- A6["📝 Markdown Syntax"]
     end
 
-    subgraph Phase2["☁️ Phase 2: Containers, Cloud, AWS, DevOps & Database"]
-        B1["🐳 Docker & Compose"] --- B2["☸️ Kubernetes (kubectl)"] --- B3["☁️ AWS Cloud CLI"] --- B4["⚙️ Jenkins CI/CD"] --- B5["🗄️ Database CLI"] --- B6["🛡️ Network Security"]
+    subgraph Phase2["☁️ Phase 2: Containers, Cloud, IaC, DevOps, WebServers & Database"]
+        B1["🐳 Docker & Compose"] --- B2["☸️ Kubernetes"] --- B3["🏗️ Terraform IaC"] --- B4["⚙️ Jenkins CI/CD"] --- B5["🌐 Nginx & Apache"] --- B6["📊 Prometheus & Grafana"] --- B7["☁️ AWS CLI"] --- B8["🗄️ Database CLI"] --- B9["🛡️ Network Security"]
     end
 
     subgraph Phase3["📊 Phase 3: Data Analytics, BI & Spreadsheets"]
@@ -54,7 +54,7 @@ graph TD
 
 ---
 
-## 📌 19 Master Shortcut Modules
+## 📌 22 Master Shortcut Modules (35+ Tools)
 
 | Module ID | Category / Field | Core Focus & Highlighted Formulas | Booklet Link |
 | :-: | :--- | :--- | :-: |
@@ -77,6 +77,9 @@ graph TD
 | **17** | **📝 Markdown Syntax** | 🟢 `# Header` • 🟡 GFM Alerts `[!NOTE]` • 🔴 KaTeX Math & Mermaid | [**Open Sheet**](17-markdown-syntax-cheatsheet/SHEET.md) |
 | **18** | **☁️ AWS Cloud CLI** | 🟢 `aws s3 ls` • 🟡 `aws configure` • 🔴 `aws s3 sync` & STS identity | [**Open Sheet**](18-aws-cloud-cli-shortcuts/SHEET.md) |
 | **19** | **📜 Shell Scripting** | 🟢 `export VAR` • 🟡 Bash `for` loop • 🔴 `crontab -e` & PowerShell regex | [**Open Sheet**](19-bash-powershell-scripting-shortcuts/SHEET.md) |
+| **20** | **🏗️ Terraform IaC** | 🟢 `terraform init` • 🟡 `terraform plan` & `apply` • 🔴 `terraform state list` | [**Open Sheet**](20-terraform-iac-shortcuts/SHEET.md) |
+| **21** | **🌐 Nginx & Apache** | 🟢 `nginx -t` • 🟡 `nginx -s reload` • 🔴 Reverse proxy `proxy_pass` | [**Open Sheet**](21-nginx-apache-webservers/SHEET.md) |
+| **22** | **📊 Prometheus & Grafana** | 🟢 `node_load1` • 🟡 `rate(http_requests_total[5m])` • 🔴 `histogram_quantile` | [**Open Sheet**](22-prometheus-grafana-monitoring/SHEET.md) |
 
 ---
 
@@ -112,6 +115,9 @@ BugFix-FM-Master-Shortcut-Booklet/
 ├── 17-markdown-syntax-cheatsheet/      # SHEET.md (Easy -> Medium -> Hard)
 ├── 18-aws-cloud-cli-shortcuts/         # SHEET.md (Easy -> Medium -> Hard)
 ├── 19-bash-powershell-scripting-shortcuts/ # SHEET.md (Easy -> Medium -> Hard)
+├── 20-terraform-iac-shortcuts/         # SHEET.md (Easy -> Medium -> Hard)
+├── 21-nginx-apache-webservers/         # SHEET.md (Easy -> Medium -> Hard)
+├── 22-prometheus-grafana-monitoring/   # SHEET.md (Easy -> Medium -> Hard)
 └── README.md                           # Master Booklet Entry
 ```
 
