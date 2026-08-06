@@ -1,7 +1,7 @@
 <div align="center">
 
 # 📻 BugFix FM
-### *The Ultimate 27-Module CSE Core Subjects & 35+ Tools Master Booklet*
+### *The Ultimate 30-Module CSE Core Subjects, Interview Cheatsheets & 35+ Tools Master Booklet*
 
 [![GitHub Stars](https://img.shields.io/github/stars/techindro/Penetration-testing-toolkit?style=for-the-badge&logo=github&color=6366f1)](https://github.com/techindro/Penetration-testing-toolkit/stargazers)
 [![GitHub Forks](https://img.shields.io/github/forks/techindro/Penetration-testing-toolkit?style=for-the-badge&logo=github&color=a855f7)](https://github.com/techindro/Penetration-testing-toolkit/network/members)
@@ -10,10 +10,10 @@
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-Yes-blue.svg?style=for-the-badge&logo=github)](https://github.com/techindro/Penetration-testing-toolkit)
 
 <p align="center">
-  <b>A complete 27-module master booklet covering CSE Core Engineering Subjects (DSA, OOP, Computer Networks, Operating Systems, System Design) and 35+ Professional Developer, Cloud, DevOps, AI, and Security Tools.</b>
+  <b>A complete 30-module master booklet covering CSE Core Engineering Subjects, MAANG Technical Interview Cheatsheets (LeetCode Patterns, SQL Window Functions, System Design Estimation) and 35+ Professional Engineering Tools.</b>
 </p>
 
-[Explore 27 Master Modules](#-27-master-shortcut-modules) • [Visual Architecture](#-ecosystem-architecture) • [External Resources](#-essential-resources)
+[Explore 30 Master Modules](#-30-master-shortcut-modules) • [Visual Architecture](#-ecosystem-architecture) • [External Resources](#-essential-resources)
 
 </div>
 
@@ -21,7 +21,7 @@
 
 ## ✨ Why BugFix FM?
 
-- 🎓 **Complete CSE Curriculum + Tools:** DSA Big-O, OOP/SOLID, OSI/Networking, OS Deadlocks, System Design (CAP Theorem) + 35+ Professional Engineering Tools.
+- 🎓 **Complete CSE Curriculum + Interview Cheatsheets:** DSA Big-O, LeetCode Patterns, SQL Window Functions, System Design Estimation, OOP/SOLID, OSI/Networking, OS Deadlocks + 35+ Engineering Tools.
 - 🎯 **3-Level Structured Progression:** Commands and formulas categorized clearly into **Level 1 (Easy)**, **Level 2 (Medium)**, and **Level 3 (Advanced Pro Tricks)**.
 - 🗣️ **Natural Human Language:** Clear, jargon-free explanations of complex concepts, DAX formulas, regex, and CLI flags.
 - 💡 **Real-World Practical Examples:** Every single shortcut, formula, DAX measure, XLOOKUP, and CLI tool includes a concrete usage example.
@@ -33,8 +33,8 @@
 
 ```mermaid
 graph TD
-    subgraph Phase1["🎓 Phase 1: Core CSE Subjects & Fundamentals"]
-        A1["⚡ 23. DSA Big-O"] --- A2["🧩 24. OOP & SOLID"] --- A3["🌐 25. Computer Networks"] --- A4["💻 26. OS & Deadlocks"] --- A5["📐 27. System Design"]
+    subgraph Phase1["🎓 Phase 1: Core CSE Subjects & Technical Interview Cheatsheets"]
+        A1["⚡ 23. DSA Big-O"] --- A2["💡 28. LeetCode Patterns"] --- A3["🗄️ 29. SQL Window Functions"] --- A4["📐 30. System Design Estimation"] --- A5["🧩 24. OOP & SOLID"] --- A6["🌐 25. Computer Networks"] --- A7["💻 26. OS & Deadlocks"] --- A8["📐 27. System Design HLD/LLD"]
     end
 
     subgraph Phase2["💻 Phase 2: OS, Editor, Version Control & Shell"]
@@ -54,7 +54,7 @@ graph TD
 
 ---
 
-## 📌 27 Master Shortcut & Core Modules
+## 📌 30 Master Shortcut & Core Modules
 
 | Module ID | Category / Subject | Core Focus & Highlighted Formulas | Booklet Link |
 | :-: | :--- | :--- | :-: |
@@ -85,6 +85,9 @@ graph TD
 | **25** | **🌐 Computer Networks** | 7 OSI Layers • Ports 80, 443, 3306, 5432 • IPv4 Subnetting Formulas | [**Open Sheet**](25-computer-networks-protocols-subnetting/SHEET.md) |
 | **26** | **💻 Operating Systems** | Process vs Thread • Round Robin Scheduling • 4 Deadlock Conditions | [**Open Sheet**](26-operating-systems-deadlock-scheduling/SHEET.md) |
 | **27** | **📐 System Design (HLD/LLD)** | Horizontal vs Vertical Scaling • LRU/LFU Caching • CAP Theorem | [**Open Sheet**](27-system-design-hld-lld-cap-theorem/SHEET.md) |
+| **28** | **💡 LeetCode Patterns** | Two Pointers • Sliding Window • Fast & Slow Pointers • Monotonic Stack | [**Open Sheet**](28-leetcode-dsa-patterns-cheatsheet/SHEET.md) |
+| **29** | **🗄️ SQL Interview Queries** | `ROW_NUMBER()`, `RANK()`, `DENSE_RANK()` • 2nd Highest Salary • CTE `WITH` | [**Open Sheet**](29-sql-queries-window-functions-joins/SHEET.md) |
+| **30** | **📐 System Design Estimation** | Latency Numbers • Powers of 2 Memory Table • QPS Calculation Formula | [**Open Sheet**](30-system-design-interview-estimation-formulas/SHEET.md) |
 
 ---
 
@@ -128,6 +131,9 @@ BugFix-FM-Master-Shortcut-Booklet/
 ├── 25-computer-networks-protocols-subnetting/    # SHEET.md (Easy -> Medium -> Hard)
 ├── 26-operating-systems-deadlock-scheduling/     # SHEET.md (Easy -> Medium -> Hard)
 ├── 27-system-design-hld-lld-cap-theorem/         # SHEET.md (Easy -> Medium -> Hard)
+├── 28-leetcode-dsa-patterns-cheatsheet/          # SHEET.md (Easy -> Medium -> Hard)
+├── 29-sql-queries-window-functions-joins/        # SHEET.md (Easy -> Medium -> Hard)
+├── 30-system-design-interview-estimation-formulas/# SHEET.md (Easy -> Medium -> Hard)
 └── README.md                           # Master Booklet Entry
 ```
 
