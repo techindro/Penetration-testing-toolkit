@@ -1,7 +1,7 @@
 <div align="center">
 
 # 📻 BugFix FM
-### *The Ultimate 30-Module CSE Core Subjects, Interview Cheatsheets & 30+ Commands Per Sheet Master Booklet*
+### *The Ultimate 30-Module CSE Core Subjects, Interview Cheatsheets & 30+ Items Per Sheet Master Booklet*
 
 [![GitHub Stars](https://img.shields.io/github/stars/techindro/Penetration-testing-toolkit?style=for-the-badge&logo=github&color=6366f1)](https://github.com/techindro/Penetration-testing-toolkit/stargazers)
 [![GitHub Forks](https://img.shields.io/github/forks/techindro/Penetration-testing-toolkit?style=for-the-badge&logo=github&color=a855f7)](https://github.com/techindro/Penetration-testing-toolkit/network/members)
@@ -21,7 +21,7 @@
 
 ## ✨ Why BugFix FM?
 
-- 📑 **30+ Commands & Formulas Per Sheet:** Packed with comprehensive, enumerated commands, formulas, DAX measures, and code templates.
+- 📑 **30+ Commands & Formulas Per Sheet:** Every sheet is packed with 30 enumerated commands, formulas, shortcuts, and code snippets.
 - 🎓 **Complete CSE Curriculum + Interview Cheatsheets:** DSA Big-O, C++ STL LeetCode Patterns, SQL Window Functions, System Design Estimation, OOP/SOLID, OSI/Networking, OS Deadlocks + 35+ Engineering Tools.
 - 🎯 **3-Level Structured Progression:** Commands and formulas categorized clearly into **Level 1 (Easy)**, **Level 2 (Medium)**, and **Level 3 (Advanced Pro Tricks)**.
 - 🗣️ **Natural Human Language:** Clear, jargon-free explanations of complex concepts, DAX formulas, regex, and CLI flags.
@@ -60,10 +60,10 @@ graph TD
 | Module ID | Category / Subject | Core Focus & Highlighted Formulas | Booklet Link |
 | :-: | :--- | :--- | :-: |
 | **01** | **🐧 Linux & Kali Linux** | `cd ~` • `Ctrl+R` • `sudo !!` & `nohup` (30+ Commands) | [**Open Sheet**](01-linux-and-kali-shortcuts/SHEET.md) |
-| **02** | **💻 VS Code Editor** | `Ctrl+P` • `Ctrl+B` • `Alt+Click` multi-cursor & `Ctrl+D` | [**Open Sheet**](02-vscode-keyboard-tricks/SHEET.md) |
-| **03** | **🐙 Git & GitHub** | `git init` -> `git push origin main` • `git stash` • `git reset --soft` & `git rebase` | [**Open Sheet**](03-github-and-git-shortcuts/SHEET.md) |
-| **04** | **🐳 Docker Containers** | `docker ps` • `docker exec -it` • `docker system prune -a` | [**Open Sheet**](04-docker-containers-tricks/SHEET.md) |
-| **05** | **☸️ Kubernetes (kubectl)** | `kubectl get pods` • `port-forward` • `rollout undo` & `force delete` | [**Open Sheet**](05-kubernetes-kubectl-tricks/SHEET.md) |
+| **02** | **💻 VS Code Editor** | `Ctrl+P` • `Ctrl+B` • `Alt+Click` multi-cursor & `Ctrl+D` (30 Shortcuts) | [**Open Sheet**](02-vscode-keyboard-tricks/SHEET.md) |
+| **03** | **🐙 Git & GitHub** | `git init` -> `git push origin main` • `git stash` • `git reset` (30 Commands) | [**Open Sheet**](03-github-and-git-shortcuts/SHEET.md) |
+| **04** | **🐳 Docker Containers** | `docker ps` • `docker exec -it` • `docker system prune -a` (30 Commands) | [**Open Sheet**](04-docker-containers-tricks/SHEET.md) |
+| **05** | **☸️ Kubernetes (kubectl)** | `kubectl get pods` • `port-forward` • `rollout undo` (30 Commands) | [**Open Sheet**](05-kubernetes-kubectl-tricks/SHEET.md) |
 | **06** | **📊 Tableau Analytics** | `Ctrl+W` • `IF/THEN` • FIXED / INCLUDE / EXCLUDE LOD | [**Open Sheet**](06-tableau-analytics-formulas/SHEET.md) |
 | **07** | **📈 Power BI DAX** | `SUM` • `CALCULATE` • `TOTALYTD` & YoY Growth % | [**Open Sheet**](07-powerbi-dax-formulas/SHEET.md) |
 | **08** | **📗 MS Excel Master** | `Alt+=` AutoSum • `XLOOKUP` & `SUMIFS` • `INDEX+MATCH` (30+ Formulas) | [**Open Sheet**](08-excel-master-formulas/SHEET.md) |
@@ -106,10 +106,10 @@ graph TD
 ```
 BugFix-FM-Master-Shortcut-Booklet/
 ├── 01-linux-and-kali-shortcuts/        # SHEET.md (30+ Commands: Easy -> Medium -> Hard)
-├── 02-vscode-keyboard-tricks/          # SHEET.md (Easy -> Medium -> Hard)
-├── 03-github-and-git-shortcuts/        # SHEET.md (Easy -> Medium -> Hard)
-├── 04-docker-containers-tricks/        # SHEET.md (Easy -> Medium -> Hard)
-├── 05-kubernetes-kubectl-tricks/       # SHEET.md (Easy -> Medium -> Hard)
+├── 02-vscode-keyboard-tricks/          # SHEET.md (30 Shortcuts: Easy -> Medium -> Hard)
+├── 03-github-and-git-shortcuts/        # SHEET.md (30 Commands: Easy -> Medium -> Hard)
+├── 04-docker-containers-tricks/        # SHEET.md (30 Commands: Easy -> Medium -> Hard)
+├── 05-kubernetes-kubectl-tricks/       # SHEET.md (30 Commands: Easy -> Medium -> Hard)
 ├── 06-tableau-analytics-formulas/      # SHEET.md (Easy -> Medium -> Hard)
 ├── 07-powerbi-dax-formulas/            # SHEET.md (Easy -> Medium -> Hard)
 ├── 08-excel-master-formulas/           # SHEET.md (30+ Formulas: Easy -> Medium -> Hard)

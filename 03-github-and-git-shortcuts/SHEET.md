@@ -1,96 +1,110 @@
-# 🐙 Module 03: Git & GitHub End-to-End Command Sheet (Easy to Hard)
+# 🐙 Module 03: Git & GitHub Master Command Sheet (30 Commands)
 
-Complete reference for Git initialization, committing, pushing to GitHub, cloning, branch management, and advanced rebase/cherry-pick tricks with practical examples.
+Complete reference for 30 essential Git and GitHub CLI commands categorized by difficulty level (🟢 Easy, 🟡 Medium, 🔴 Hard).
 
 ---
 
-## 🟢 Level 1: Easy / Beginner Setup & Workflow (`git init` to `git push`)
+## 🟢 Level 1: Easy / Beginner Commands (1 - 10)
 
-### 1. Initializing a New Repository & Pushing to GitHub
 ```bash
-# Step 1: Initialize git inside your project folder
+# 1. Initialize new local git repository
 git init
 
-# Step 2: Configure your global user name and email
-git config --global user.name "Your Name"
-git config --global user.email "your_email@example.com"
+# 2. Configure global user name
+git config --global user.name "Shubham Patel"
 
-# Step 3: Stage all files for commit
+# 3. Configure global user email
+git config --global user.email "techindro@example.com"
+
+# 4. Stage all modified and new files for commit
 git add .
 
-# Step 4: Create your first commit
-git commit -m "feat: initial project commit"
+# 5. Commit staged changes with message
+git commit -m "feat: initial commit"
 
-# Step 5: Rename default branch to main
+# 6. Check status of working directory and staging area
+git status
+
+# 7. Rename current branch to main
 git branch -M main
 
-# Step 6: Link your local repository to remote GitHub repository
-git remote add origin https://github.com/username/repository.git
+# 8. Add remote GitHub repository URL
+git remote add origin https://github.com/techindro/repository.git
 
-# Step 7: Push code to GitHub and set tracking upstream (-u)
+# 9. Push commits to remote branch and set upstream (-u)
 git push -u origin main
-```
 
-### 2. Cloning & Pulling Code
-```bash
-# Clone an existing GitHub repository
-git clone https://github.com/username/repository.git
-
-# Pull latest changes from remote GitHub repository
-git pull origin main
+# 10. Clone remote GitHub repository to local machine
+git clone https://github.com/techindro/repository.git
 ```
 
 ---
 
-## 🟡 Level 2: Medium / Intermediate Branching & Stash Commands
+## 🟡 Level 2: Medium / Intermediate Commands (11 - 20)
 
 ```bash
-# 1. Create and switch to a new feature branch
-git checkout -b feature/login-page
-# (Or using modern syntax):
-git switch -c feature/login-page
+# 11. Pull latest commits from remote main branch
+git pull origin main
 
-# 2. View active status of modified/untracked files
-git status
+# 12. Create and switch to new feature branch
+git checkout -b feature/user-auth
 
-# 3. Temporarily stash uncommitted changes
+# 13. List all local and remote branches
+git branch -a
+
+# 14. Switch to existing branch
+git switch main
+
+# 15. Merge feature branch into current branch
+git merge feature/user-auth
+
+# 16. Temporarily stash uncommitted changes
 git stash
-# Restore stashed changes later:
+
+# 17. Restore most recently stashed changes
 git stash pop
 
-# 4. View remote repository URLs
+# 18. List all stashed change sets
+git stash list
+
+# 19. View remote repository URLs
 git remote -v
 
-# 5. Fetch latest remote branch updates without merging
+# 20. Fetch updates from remote without merging
 git fetch origin
 ```
 
 ---
 
-## 🔴 Level 3: Hard / Advanced Pro Tricks & History Fixes
+## 🔴 Level 3: Hard / Advanced Pro Tricks (21 - 30)
 
 ```bash
-# 1. Display clean single-line git history graph
+# 21. Single-line graphical commit history graph
 git log --oneline --graph --all
 
-# 2. Undo last commit but KEEP all code changes in your workspace
+# 22. Undo last commit but keep changes in workspace (Soft Reset)
 git reset --soft HEAD~1
 
-# 3. Discard ALL local uncommitted changes instantly (Revert to last clean commit)
+# 23. Undo last commit and discard all changes (Hard Reset - Danger!)
+git reset --hard HEAD~1
+
+# 24. Discard all uncommitted local modifications in workspace
 git checkout .
-# or
-git restore .
 
-# 4. Amend / Update the commit message of the most recent commit
-git commit --amend -m "feat: complete user auth endpoint"
+# 25. Amend most recent commit message or add forgotten files
+git commit --amend -m "feat: complete login authentication API"
 
-# 5. Rebase feature branch on top of main (Clean linear history)
+# 26. Rebase feature branch onto main (Clean linear history)
 git rebase main
 
-# 6. Cherry-pick a specific commit from another branch into current branch
-git cherry-pick <commit_hash>
+# 27. Cherry-pick specific commit hash into current branch
+git cherry-pick a1b2c3d
 
-# 7. GitHub Web Browser Shortcut:
-# Open any GitHub repo (e.g. github.com/facebook/react), press '.' (Period key).
-# Result: Launches full VS Code editor directly in your web browser!
+# 28. Delete local branch forcefully (-D)
+git branch -D feature/old-branch
+
+# 29. Delete remote branch on GitHub
+git push origin --delete feature/old-branch
+
+# 30. GitHub Web Browser Shortcut: Press '.' on any GitHub repository page to open full VS Code Web!
 ```
