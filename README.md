@@ -1,7 +1,7 @@
 <div align="center">
 
 # 📻 BugFix FM
-### *The Ultimate 35+ Tools Master Shortcut & Formula Booklet*
+### *The Ultimate 27-Module CSE Core Subjects & 35+ Tools Master Booklet*
 
 [![GitHub Stars](https://img.shields.io/github/stars/techindro/Penetration-testing-toolkit?style=for-the-badge&logo=github&color=6366f1)](https://github.com/techindro/Penetration-testing-toolkit/stargazers)
 [![GitHub Forks](https://img.shields.io/github/forks/techindro/Penetration-testing-toolkit?style=for-the-badge&logo=github&color=a855f7)](https://github.com/techindro/Penetration-testing-toolkit/network/members)
@@ -10,10 +10,10 @@
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-Yes-blue.svg?style=for-the-badge&logo=github)](https://github.com/techindro/Penetration-testing-toolkit)
 
 <p align="center">
-  <b>A curated, daily-use master shortcut & formula booklet categorized by difficulty level (🟢 Easy, 🟡 Medium, 🔴 Hard) across 35+ core professional developer, cloud, DevOps, AI, and analytics tools.</b>
+  <b>A complete 27-module master booklet covering CSE Core Engineering Subjects (DSA, OOP, Computer Networks, Operating Systems, System Design) and 35+ Professional Developer, Cloud, DevOps, AI, and Security Tools.</b>
 </p>
 
-[Explore 22 Booklet Modules](#-22-master-shortcut-modules) • [Visual Architecture](#-ecosystem-architecture) • [External Resources](#-essential-resources)
+[Explore 27 Master Modules](#-27-master-shortcut-modules) • [Visual Architecture](#-ecosystem-architecture) • [External Resources](#-essential-resources)
 
 </div>
 
@@ -21,9 +21,9 @@
 
 ## ✨ Why BugFix FM?
 
-- 🛠️ **35+ Professional Tools Covered:** Linux, Kali Linux, VS Code, Git, GitHub, Docker, Compose, Kubernetes, Terraform, Nginx, Apache, Prometheus, Grafana, AWS CLI, Tableau, Power BI DAX, MS Excel, Ollama, Hugging Face, Termux, Jenkins, JupyterLab, Nmap, Tcpdump, Tshark, Netcat, PostgreSQL, MySQL, MongoDB, Redis, Regex, Markdown, Bash, PowerShell.
+- 🎓 **Complete CSE Curriculum + Tools:** DSA Big-O, OOP/SOLID, OSI/Networking, OS Deadlocks, System Design (CAP Theorem) + 35+ Professional Engineering Tools.
 - 🎯 **3-Level Difficulty Classification:** Commands categorized into 🟢 **Level 1 (Easy)**, 🟡 **Level 2 (Medium)**, and 🔴 **Level 3 (Hard Pro Tricks)**.
-- 🗣️ **Natural Human Language:** Clear, jargon-free explanations of complex commands, DAX formulas, regex, and CLI flags.
+- 🗣️ **Natural Human Language:** Clear, jargon-free explanations of complex concepts, DAX formulas, regex, and CLI flags.
 - 💡 **Real-World Practical Examples:** Every single shortcut, formula, DAX measure, XLOOKUP, and CLI tool includes a concrete usage example.
 - 🚀 **GitHub Browser Ready:** Press `.` on your keyboard anywhere in this repository to open full VS Code Web directly!
 
@@ -33,20 +33,20 @@
 
 ```mermaid
 graph TD
-    subgraph Phase1["💻 Phase 1: Operating System, Editor, Version Control & Shell"]
-        A1["🐧 Linux & Kali CLI"] --- A2["💻 VS Code Shortcuts"] --- A3["🐙 Git & GitHub"] --- A4["📜 Bash & PowerShell"] --- A5["🔣 Regex Formulas"] --- A6["📝 Markdown Syntax"]
+    subgraph Phase1["🎓 Phase 1: Core CSE Subjects & Fundamentals"]
+        A1["⚡ 23. DSA Big-O"] --- A2["🧩 24. OOP & SOLID"] --- A3["🌐 25. Computer Networks"] --- A4["💻 26. OS & Deadlocks"] --- A5["📐 27. System Design"]
     end
 
-    subgraph Phase2["☁️ Phase 2: Containers, Cloud, IaC, DevOps, WebServers & Database"]
-        B1["🐳 Docker & Compose"] --- B2["☸️ Kubernetes"] --- B3["🏗️ Terraform IaC"] --- B4["⚙️ Jenkins CI/CD"] --- B5["🌐 Nginx & Apache"] --- B6["📊 Prometheus & Grafana"] --- B7["☁️ AWS CLI"] --- B8["🗄️ Database CLI"] --- B9["🛡️ Network Security"]
+    subgraph Phase2["💻 Phase 2: OS, Editor, Version Control & Shell"]
+        B1["🐧 Linux & Kali CLI"] --- B2["💻 VS Code Shortcuts"] --- B3["🐙 Git & GitHub"] --- B4["📜 Bash & PowerShell"] --- B5["🔣 Regex Formulas"] --- B6["📝 Markdown Syntax"]
     end
 
-    subgraph Phase3["📊 Phase 3: Data Analytics, BI & Spreadsheets"]
-        C1["📊 Tableau Analytics"] --- C2["📈 Power BI DAX"] --- C3["📗 MS Excel Master"] --- C4["📓 JupyterLab & Magic"]
+    subgraph Phase3["☁️ Phase 3: Containers, Cloud, IaC, DevOps, WebServers & DB"]
+        C1["🐳 Docker & Compose"] --- C2["☸️ Kubernetes"] --- C3["🏗️ Terraform IaC"] --- C4["⚙️ Jenkins CI/CD"] --- C5["🌐 Nginx & Apache"] --- C6["📊 Prometheus & Grafana"] --- C7["☁️ AWS CLI"] --- C8["🗄️ Database CLI"] --- C9["🛡️ Network Security"]
     end
 
-    subgraph Phase4["🤖 Phase 4: Local AI & Mobile Terminal"]
-        D1["🦙 Ollama Local AI"] --- D2["🤗 Hugging Face CLI"] --- D3["📱 Termux Android"]
+    subgraph Phase4["📊 Phase 4: Data Analytics, BI, AI & Mobile"]
+        D1["📊 Tableau Analytics"] --- D2["📈 Power BI DAX"] --- D3["📗 MS Excel Master"] --- D4["📓 JupyterLab & Magic"] --- D5["🦙 Ollama Local AI"] --- D6["🤗 Hugging Face"] --- D7["📱 Termux Android"]
     end
 
     Phase1 --> Phase2 --> Phase3 --> Phase4
@@ -54,9 +54,9 @@ graph TD
 
 ---
 
-## 📌 22 Master Shortcut Modules (35+ Tools)
+## 📌 27 Master Shortcut & Core Modules
 
-| Module ID | Category / Field | Core Focus & Highlighted Formulas | Booklet Link |
+| Module ID | Category / Subject | Core Focus & Highlighted Formulas | Booklet Link |
 | :-: | :--- | :--- | :-: |
 | **01** | **🐧 Linux & Kali Linux** | 🟢 `cd ~` • 🟡 `Ctrl+R` • 🔴 `sudo !!` & `nohup` | [**Open Sheet**](01-linux-and-kali-shortcuts/SHEET.md) |
 | **02** | **💻 VS Code Editor** | 🟢 `Ctrl+P` • 🟡 `Ctrl+B` • 🔴 `Alt+Click` multi-cursor & `Ctrl+D` | [**Open Sheet**](02-vscode-keyboard-tricks/SHEET.md) |
@@ -80,6 +80,11 @@ graph TD
 | **20** | **🏗️ Terraform IaC** | 🟢 `terraform init` • 🟡 `terraform plan` & `apply` • 🔴 `terraform state list` | [**Open Sheet**](20-terraform-iac-shortcuts/SHEET.md) |
 | **21** | **🌐 Nginx & Apache** | 🟢 `nginx -t` • 🟡 `nginx -s reload` • 🔴 Reverse proxy `proxy_pass` | [**Open Sheet**](21-nginx-apache-webservers/SHEET.md) |
 | **22** | **📊 Prometheus & Grafana** | 🟢 `node_load1` • 🟡 `rate(http_requests_total[5m])` • 🔴 `histogram_quantile` | [**Open Sheet**](22-prometheus-grafana-monitoring/SHEET.md) |
+| **23** | **⚡ DSA Big-O Complexity** | 🟢 Big-O Order • 🟡 Array/Tree Complexity • 🔴 QuickSort vs MergeSort | [**Open Sheet**](23-dsa-data-structures-algorithms-complexity/SHEET.md) |
+| **24** | **🧩 OOP & Design Patterns** | 🟢 4 OOP Pillars • 🟡 SOLID Principles • 🔴 Singleton & Factory Patterns | [**Open Sheet**](24-oop-principles-design-patterns/SHEET.md) |
+| **25** | **🌐 Computer Networks** | 🟢 7 OSI Layers • 🟡 Ports 80, 443, 3306, 5432 • 🔴 IPv4 Subnetting Formulas | [**Open Sheet**](25-computer-networks-protocols-subnetting/SHEET.md) |
+| **26** | **💻 Operating Systems** | 🟢 Process vs Thread • 🟡 Round Robin Scheduling • 🔴 4 Deadlock Conditions | [**Open Sheet**](26-operating-systems-deadlock-scheduling/SHEET.md) |
+| **27** | **📐 System Design (HLD/LLD)** | 🟢 Horizontal vs Vertical Scaling • 🟡 LRU/LFU Caching • 🔴 CAP Theorem | [**Open Sheet**](27-system-design-hld-lld-cap-theorem/SHEET.md) |
 
 ---
 
@@ -118,6 +123,11 @@ BugFix-FM-Master-Shortcut-Booklet/
 ├── 20-terraform-iac-shortcuts/         # SHEET.md (Easy -> Medium -> Hard)
 ├── 21-nginx-apache-webservers/         # SHEET.md (Easy -> Medium -> Hard)
 ├── 22-prometheus-grafana-monitoring/   # SHEET.md (Easy -> Medium -> Hard)
+├── 23-dsa-data-structures-algorithms-complexity/ # SHEET.md (Easy -> Medium -> Hard)
+├── 24-oop-principles-design-patterns/  # SHEET.md (Easy -> Medium -> Hard)
+├── 25-computer-networks-protocols-subnetting/    # SHEET.md (Easy -> Medium -> Hard)
+├── 26-operating-systems-deadlock-scheduling/     # SHEET.md (Easy -> Medium -> Hard)
+├── 27-system-design-hld-lld-cap-theorem/         # SHEET.md (Easy -> Medium -> Hard)
 └── README.md                           # Master Booklet Entry
 ```
 
