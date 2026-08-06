@@ -13,7 +13,7 @@
   <b>A complete landmark 35-module master booklet featuring Direct Raw Download Links 📥, Official Software Links 🌐, Memory Hooks 🧠, and 30+ enumerated commands & formulas per sheet covering OWASP Top 10 Security, Data Science, AI/ML, Web Dev, CSE Core Subjects, MAANG Interview Cheatsheets, and 50+ Tools.</b>
 </p>
 
-[Explore 35 Master Modules](#-35-master-shortcut-modules) • [Visual Architecture](#-ecosystem-architecture) • [External Resources](#-essential-resources)
+[Explore 35 Master Modules](#-35-master-modules-with-direct-raw-download-links) • [Visual Architecture](#-ecosystem-architecture) • [External Resources](#-essential-resources)
 
 </div>
 
@@ -38,16 +38,16 @@ graph TD
         A1["⚡ 23. DSA Big-O"] --- A2["💡 28. LeetCode Patterns (C++)"] --- A3["🗄️ 29. SQL Window Functions"] --- A4["📐 30. System Design Estimation"] --- A5["🧩 24. OOP & SOLID"] --- A6["🌐 25. Computer Networks"] --- A7["💻 26. OS & Deadlocks"] --- A8["📐 27. System Design HLD/LLD"]
     end
 
-    subgraph Phase2["💻 Phase 2: OS, Editor, Version Control, Web & Shell"]
-        B1["🐧 Linux & Kali CLI"] --- B2["💻 VS Code Shortcuts"] --- B3["🐙 Git & GitHub"] --- B4["📜 Bash & PowerShell"] --- B5["🔣 Regex Formulas"] --- B6["📝 Markdown Syntax"] --- B7["🟢 31. Node.js & NPM CLI"] --- B8["⚛️ 32. React.js & Next.js"]
+    subgraph Phase2["💻 Phase 2: OS, Editor, Version Control, Web Dev & Scripting"]
+        B1["🐧 01. Linux & Kali CLI"] --- B2["💻 02. VS Code Shortcuts"] --- B3["🐙 03. Git & GitHub"] --- B4["📜 19. Bash & PowerShell"] --- B5["🔣 16. Regex Formulas"] --- B6["📝 17. Markdown Syntax"] --- B7["🟢 31. Node.js & Express"] --- B8["⚛️ 32. React.js & Next.js"]
     end
 
-    subgraph Phase3["☁️ Phase 3: Containers, Cloud, IaC, DevOps, WebServers & DB"]
-        C1["🐳 Docker & Compose"] --- C2["☸️ Kubernetes"] --- C3["🏗️ Terraform IaC"] --- C4["⚙️ Jenkins CI/CD"] --- C5["🌐 Nginx & Apache"] --- C6["📊 Prometheus & Grafana"] --- C7["☁️ AWS CLI"] --- C8["🗄️ Database CLI"] --- C9["🛡️ Network Security"]
+    subgraph Phase3["☁️ Phase 3: Cloud, Containers, IaC, DevOps, Web Servers & Databases"]
+        C1["🐳 04. Docker & Compose"] --- C2["☸️ 05. Kubernetes"] --- C3["🏗️ 20. Terraform IaC"] --- C4["⚙️ 12. Jenkins CI/CD"] --- C5["🌐 21. Nginx & Apache"] --- C6["📊 22. Prometheus & Grafana"] --- C7["☁️ 18. AWS Cloud CLI"] --- C8["🗄️ 15. Database CLI"] --- C9["🛡️ 14. Network Security"]
     end
 
     subgraph Phase4["📊 Phase 4: Data Science, AI/ML, Cybersecurity, Analytics & Mobile"]
-        D1["🛡️ 35. OWASP Top 10 Security"] --- D2["🐍 33. NumPy & Pandas"] --- D3["🤖 34. PyTorch & TensorFlow"] --- D4["📊 Tableau Analytics"] --- D5["📈 Power BI DAX"] --- D6["📗 MS Excel Master"] --- D7["📓 JupyterLab & Magic"] --- D8["🦙 Ollama Local AI"] --- D9["🤗 Hugging Face"] --- D10["📱 Termux Android"]
+        D1["🛡️ 35. OWASP Top 10 Security"] --- D2["🐍 33. NumPy & Pandas"] --- D3["🤖 34. PyTorch & TensorFlow"] --- D4["📊 06. Tableau"] --- D5["📈 07. Power BI DAX"] --- D6["📗 08. MS Excel Master"] --- D7["📓 13. JupyterLab & Magic"] --- D8["🦙 09. Ollama Local AI"] --- D9["🤗 10. Hugging Face"] --- D10["📱 11. Termux Android"]
     end
 
     Phase1 --> Phase2 --> Phase3 --> Phase4
