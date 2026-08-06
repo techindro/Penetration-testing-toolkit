@@ -34,7 +34,7 @@
 ```mermaid
 graph TD
     subgraph Phase1["💻 Phase 1: Operating System, Editor, Version Control & Shell"]
-        A1["🐧 Linux & Kali CLI"] --- A2["💻 VS Code Shortcuts"] --- A3["🐙 Git & GitHub"] --- A4["📜 Bash & PowerShell"] --- A5["🔣 Regex Formulas"] --- A6["📝 Markdown Syntax"]
+        A1["🐧 Linux & Kali CLI"] --- A2["💻 VS Code Shortcuts"] --- A3["🐙 Git & GitHub Workflow"] --- A4["📜 Bash & PowerShell"] --- A5["🔣 Regex Formulas"] --- A6["📝 Markdown Syntax"]
     end
 
     subgraph Phase2["☁️ Phase 2: Containers, Cloud, AWS, DevOps & Database"]
@@ -60,7 +60,7 @@ graph TD
 | :-: | :--- | :--- | :-: |
 | **01** | **🐧 Linux & Kali Linux** | 🟢 `cd ~` • 🟡 `Ctrl+R` • 🔴 `sudo !!` & `nohup` | [**Open Sheet**](01-linux-and-kali-shortcuts/SHEET.md) |
 | **02** | **💻 VS Code Editor** | 🟢 `Ctrl+P` • 🟡 `Ctrl+B` • 🔴 `Alt+Click` multi-cursor & `Ctrl+D` | [**Open Sheet**](02-vscode-keyboard-tricks/SHEET.md) |
-| **03** | **🐙 Git & GitHub** | 🟢 `git checkout .` • 🟡 `git stash` • 🔴 `git reset --soft` & GitHub `.` | [**Open Sheet**](03-github-and-git-shortcuts/SHEET.md) |
+| **03** | **🐙 Git & GitHub** | 🟢 `git init` -> `git push origin main` • 🟡 `git stash` • 🔴 `git reset --soft` & `git rebase` | [**Open Sheet**](03-github-and-git-shortcuts/SHEET.md) |
 | **04** | **🐳 Docker Containers** | 🟢 `docker ps` • 🟡 `docker exec -it` • 🔴 `docker system prune -a` | [**Open Sheet**](04-docker-containers-tricks/SHEET.md) |
 | **05** | **☸️ Kubernetes (kubectl)** | 🟢 `kubectl get pods` • 🟡 `port-forward` • 🔴 `rollout undo` & `force delete` | [**Open Sheet**](05-kubernetes-kubectl-tricks/SHEET.md) |
 | **06** | **📊 Tableau Analytics** | 🟢 `Ctrl+W` • 🟡 `IF/THEN` • 🔴 FIXED / INCLUDE / EXCLUDE LOD | [**Open Sheet**](06-tableau-analytics-formulas/SHEET.md) |

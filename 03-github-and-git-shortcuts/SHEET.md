@@ -1,58 +1,96 @@
-# 🐙 Module 03: Git & GitHub Comprehensive One-Liners & Examples
+# 🐙 Module 03: Git & GitHub End-to-End Command Sheet (Easy to Hard)
 
-Essential Git one-liners and GitHub workflow tricks with clear practical examples.
+Complete reference for Git initialization, committing, pushing to GitHub, cloning, branch management, and advanced rebase/cherry-pick tricks with practical examples.
 
 ---
 
-## ⚡ 1. Git Daily One-Liners with Examples
+## 🟢 Level 1: Easy / Beginner Setup & Workflow (`git init` to `git push`)
 
+### 1. Initializing a New Repository & Pushing to GitHub
 ```bash
-# Example 1: Display clean single-line git history with branch graph
-git log --oneline --graph --all
-# Output:
-# * a1b2c3d (HEAD -> main, origin/main) feat: add authentication API
-# * e5f6g7h fix: resolve CORS policy error
+# Step 1: Initialize git inside your project folder
+git init
 
-# Example 2: Save uncommitted changes temporarily without committing
-git stash
-# Make urgent fix on another branch, then restore:
-git stash pop
+# Step 2: Configure your global user name and email
+git config --global user.name "Your Name"
+git config --global user.email "your_email@example.com"
 
-# Example 3: Undo the most recent commit while keeping all code changes in workspace
-git reset --soft HEAD~1
-# Usage: Use when you committed too early or forgot to add a file.
+# Step 3: Stage all files for commit
+git add .
 
-# Example 4: Discard all local uncommitted changes instantly (Fresh start)
-git checkout .
-# or
-git restore .
-# Usage: Reverts all files back to the last clean committed state.
+# Step 4: Create your first commit
+git commit -m "feat: initial project commit"
 
-# Example 5: Update the message of the last commit
-git commit --amend -m "feat: complete login endpoint integration"
-# Usage: Fixes typos in your most recent git commit message.
+# Step 5: Rename default branch to main
+git branch -M main
 
-# Example 6: Rename local branch
-git branch -m main master
+# Step 6: Link your local repository to remote GitHub repository
+git remote add origin https://github.com/username/repository.git
 
-# Example 7: Delete local and remote branch
-git branch -d feature-login
-git push origin --delete feature-login
+# Step 7: Push code to GitHub and set tracking upstream (-u)
+git push -u origin main
+```
+
+### 2. Cloning & Pulling Code
+```bash
+# Clone an existing GitHub repository
+git clone https://github.com/username/repository.git
+
+# Pull latest changes from remote GitHub repository
+git pull origin main
 ```
 
 ---
 
-## 🚀 2. GitHub Web & CLI Examples
+## 🟡 Level 2: Medium / Intermediate Branching & Stash Commands
 
 ```bash
-# Example 1: Clone repository using SSH key
-git clone git@github.com:techindro/Penetration-testing-toolkit.git
+# 1. Create and switch to a new feature branch
+git checkout -b feature/login-page
+# (Or using modern syntax):
+git switch -c feature/login-page
 
-# Example 2: Test GitHub SSH connection
-ssh -T git@github.com
-# Output: Hi techindro! You've successfully authenticated, but GitHub does not provide shell access.
+# 2. View active status of modified/untracked files
+git status
 
-# Example 3: GitHub Web Browser Shortcut
+# 3. Temporarily stash uncommitted changes
+git stash
+# Restore stashed changes later:
+git stash pop
+
+# 4. View remote repository URLs
+git remote -v
+
+# 5. Fetch latest remote branch updates without merging
+git fetch origin
+```
+
+---
+
+## 🔴 Level 3: Hard / Advanced Pro Tricks & History Fixes
+
+```bash
+# 1. Display clean single-line git history graph
+git log --oneline --graph --all
+
+# 2. Undo last commit but KEEP all code changes in your workspace
+git reset --soft HEAD~1
+
+# 3. Discard ALL local uncommitted changes instantly (Revert to last clean commit)
+git checkout .
+# or
+git restore .
+
+# 4. Amend / Update the commit message of the most recent commit
+git commit --amend -m "feat: complete user auth endpoint"
+
+# 5. Rebase feature branch on top of main (Clean linear history)
+git rebase main
+
+# 6. Cherry-pick a specific commit from another branch into current branch
+git cherry-pick <commit_hash>
+
+# 7. GitHub Web Browser Shortcut:
 # Open any GitHub repo (e.g. github.com/facebook/react), press '.' (Period key).
 # Result: Launches full VS Code editor directly in your web browser!
 ```
