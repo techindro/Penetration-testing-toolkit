@@ -1,5 +1,5 @@
-# ⚡ BugFix FM - Professional Developer, Cloud & Analytics Master Shortcut Booklet
-> **A Comprehensive, Daily-Use Shortcut & Formula Booklet written in Natural Human Language for Linux, VS Code, Git, Docker, Kubernetes, Tableau, Power BI, MS Excel, Ollama, Hugging Face, and Termux.**
+# ⚡ BugFix FM - Professional Developer, Cloud, DevOps & Analytics Master Shortcut Booklet
+> **A Comprehensive, Daily-Use Shortcut & Formula Booklet written in Natural Human Language with Practical Examples for Linux, VS Code, Git, Docker, Kubernetes, Tableau, Power BI, MS Excel, Ollama, Hugging Face, Termux, Jenkins CI/CD, and JupyterLab.**
 
 Curated by **Shubham Patel (techindro)**
 
@@ -7,7 +7,7 @@ Curated by **Shubham Patel (techindro)**
 
 ## 📌 Master Shortcut & Formula Booklet Index
 
-| Module | Professional Tool / Domain | Key Formulas & One-Liners | Cheatsheet Link |
+| Module | Professional Tool / Domain | Key Formulas, Shortcuts & Examples | Cheatsheet Link |
 | :--- | :--- | :--- | :---: |
 | **01. Linux & Kali Linux** | Operating Systems | `Ctrl+R` (Search history), `sudo !!`, `cd -`, `nohup` | [View Sheet](01-linux-and-kali-shortcuts/SHEET.md) |
 | **02. VS Code** | IDE / Editor | `Ctrl+P` (Quick open), `Ctrl+Shift+P`, `Alt+Click` multi-cursor, `Ctrl+D` | [View Sheet](02-vscode-keyboard-tricks/SHEET.md) |
@@ -20,6 +20,8 @@ Curated by **Shubham Patel (techindro)**
 | **09. Ollama Local AI** | LLM Engine | `ollama run llama3`, `ollama list`, `ollama ps`, Modelfile setup | [View Sheet](09-ollama-local-ai-tricks/SHEET.md) |
 | **10. Hugging Face** | Machine Learning | `huggingface-cli download`, GGUF model download, Python snapshots | [View Sheet](10-huggingface-cli-python-tricks/SHEET.md) |
 | **11. Termux Android** | Mobile Terminal | `termux-setup-storage`, `sshd` server on phone, `termux-wake-lock` | [View Sheet](11-termux-android-shortcuts/SHEET.md) |
+| **12. Jenkins CI/CD** | DevOps Automation | Declarative Jenkinsfile pipeline, Docker agent, Jenkins CLI API | [View Sheet](12-jenkins-cicd-shortcuts/SHEET.md) |
+| **13. JupyterLab & Notebooks** | Data Science & AI | `Shift+Enter` run cell, `A`/`B`/`D+D`, Magic `%timeit`, `%pip`, `%debug` | [View Sheet](13-jupyterlab-keyboard-shortcuts/SHEET.md) |
 
 ---
 
@@ -38,6 +40,8 @@ BugFix-FM-Master-Shortcut-Booklet/
 ├── 09-ollama-local-ai-tricks/          # SHEET.md (Ollama Run, List & Modelfile)
 ├── 10-huggingface-cli-python-tricks/   # SHEET.md (Hugging Face CLI & Python Snapshots)
 ├── 11-termux-android-shortcuts/        # SHEET.md (Termux Setup, Storage & SSHD)
+├── 12-jenkins-cicd-shortcuts/          # SHEET.md (Declarative Jenkinsfile & Docker Runner)
+├── 13-jupyterlab-keyboard-shortcuts/   # SHEET.md (JupyterLab Shortcuts & %timeit Magic)
 └── README.md                           # Master Shortcut & Formula Booklet Index
 ```
 
