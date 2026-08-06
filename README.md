@@ -31,41 +31,24 @@
 ## 🎨 Ecosystem Architecture
 
 ```mermaid
-flowchart TD
-    subgraph Tier1["💻 Tier 1: Operating System, Editor & Version Control"]
-        direction LR
-        Linux["🐧 Linux & Kali CLI"]
-        VSCode["💻 VS Code Shortcuts"]
-        Git["🐙 Git & GitHub"]
-        Regex["🔣 Regex Formulas"]
-        MD["📝 Markdown Syntax"]
+graph TD
+    subgraph Phase1["💻 Phase 1: Operating System, Editor & Version Control"]
+        A1["🐧 Linux & Kali CLI"] --- A2["💻 VS Code Shortcuts"] --- A3["🐙 Git & GitHub"] --- A4["🔣 Regex Formulas"] --- A5["📝 Markdown Syntax"]
     end
 
-    subgraph Tier2["☁️ Tier 2: Containers, Cloud, DevOps & Database"]
-        direction LR
-        Docker["🐳 Docker & Compose"]
-        K8s["☸️ Kubernetes (kubectl)"]
-        Jenkins["⚙️ Jenkins CI/CD"]
-        DB["🗄️ Database CLI"]
-        SecNet["🛡️ Network Security"]
+    subgraph Phase2["☁️ Phase 2: Containers, Cloud, DevOps & Database"]
+        B1["🐳 Docker & Compose"] --- B2["☸️ Kubernetes (kubectl)"] --- B3["⚙️ Jenkins CI/CD"] --- B4["🗄️ Database CLI"] --- B5["🛡️ Network Security"]
     end
 
-    subgraph Tier3["📊 Tier 3: Data Analytics, BI & Spreadsheets"]
-        direction LR
-        Tableau["📊 Tableau Analytics"]
-        PowerBI["📈 Power BI DAX"]
-        Excel["📗 MS Excel Master"]
-        Jupyter["📓 JupyterLab & Magic"]
+    subgraph Phase3["📊 Phase 3: Data Analytics, BI & Spreadsheets"]
+        C1["📊 Tableau Analytics"] --- C2["📈 Power BI DAX"] --- C3["📗 MS Excel Master"] --- C4["📓 JupyterLab & Magic"]
     end
 
-    subgraph Tier4["🤖 Tier 4: Local AI & Mobile Terminal"]
-        direction LR
-        Ollama["🦙 Ollama Local AI"]
-        HF["🤗 Hugging Face CLI"]
-        Termux["📱 Termux Android"]
+    subgraph Phase4["🤖 Phase 4: Local AI & Mobile Terminal"]
+        D1["🦙 Ollama Local AI"] --- D2["🤗 Hugging Face CLI"] --- D3["📱 Termux Android"]
     end
 
-    Tier1 --> Tier2 --> Tier3 --> Tier4
+    Phase1 --> Phase2 --> Phase3 --> Phase4
 ```
 
 ---
