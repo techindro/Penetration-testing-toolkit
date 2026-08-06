@@ -1,7 +1,7 @@
 <div align="center">
 
 # 📻 BugFix FM
-### *The Ultimate 32-Module CSE Core Subjects, Interview Cheatsheets & 30+ Items Per Sheet Master Booklet*
+### *The Ultimate 34-Module CSE Core Subjects, AI/ML, Interview Cheatsheets & 30+ Items Per Sheet Master Booklet*
 
 [![GitHub Stars](https://img.shields.io/github/stars/techindro/Penetration-testing-toolkit?style=for-the-badge&logo=github&color=6366f1)](https://github.com/techindro/Penetration-testing-toolkit/stargazers)
 [![GitHub Forks](https://img.shields.io/github/forks/techindro/Penetration-testing-toolkit?style=for-the-badge&logo=github&color=a855f7)](https://github.com/techindro/Penetration-testing-toolkit/network/members)
@@ -10,10 +10,10 @@
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-Yes-blue.svg?style=for-the-badge&logo=github)](https://github.com/techindro/Penetration-testing-toolkit)
 
 <p align="center">
-  <b>A complete 32-module master booklet featuring 30+ enumerated commands & formulas per sheet covering Node.js, React.js, Next.js, CSE Core Engineering Subjects, MAANG Technical Interview Cheatsheets, and 35+ Professional Engineering Tools.</b>
+  <b>A complete 34-module master booklet featuring 30+ enumerated commands & formulas per sheet covering NumPy, Pandas, Scikit-Learn, PyTorch, TensorFlow, Node.js, React.js, Next.js, CSE Core Engineering Subjects, MAANG Technical Interview Cheatsheets, and 40+ Professional Engineering Tools.</b>
 </p>
 
-[Explore 32 Master Modules](#-32-master-shortcut-modules) • [Visual Architecture](#-ecosystem-architecture) • [External Resources](#-essential-resources)
+[Explore 34 Master Modules](#-34-master-shortcut-modules) • [Visual Architecture](#-ecosystem-architecture) • [External Resources](#-essential-resources)
 
 </div>
 
@@ -22,7 +22,8 @@
 ## ✨ Why BugFix FM?
 
 - 📑 **30+ Commands & Formulas Per Sheet:** Every sheet is packed with 30 enumerated commands, formulas, shortcuts, and code snippets.
-- 🎓 **Complete CSE Curriculum + Interview Cheatsheets:** Node.js, React.js, Next.js, DSA Big-O, C++ STL LeetCode Patterns, SQL Window Functions, System Design Estimation, OOP/SOLID, OSI/Networking, OS Deadlocks + 35+ Engineering Tools.
+- 🤖 **Data Science & AI/ML Complete Suite:** NumPy, Pandas DataFrames, Scikit-Learn ML Models, PyTorch Neural Nets, TensorFlow/Keras Deep Learning.
+- 🎓 **Complete CSE Curriculum + Interview Cheatsheets:** Node.js, React.js, Next.js, DSA Big-O, C++ STL LeetCode Patterns, SQL Window Functions, System Design Estimation, OOP/SOLID, OSI/Networking, OS Deadlocks + 40+ Engineering Tools.
 - 🎯 **3-Level Structured Progression:** Commands and formulas categorized clearly into **Level 1 (Easy)**, **Level 2 (Medium)**, and **Level 3 (Advanced Pro Tricks)**.
 - 🗣️ **Natural Human Language:** Clear, jargon-free explanations of complex concepts, DAX formulas, regex, and CLI flags.
 - 💡 **Real-World Practical Examples:** Every single shortcut, formula, DAX measure, XLOOKUP, and CLI tool includes a concrete usage example.
@@ -46,8 +47,8 @@ graph TD
         C1["🐳 Docker & Compose"] --- C2["☸️ Kubernetes"] --- C3["🏗️ Terraform IaC"] --- C4["⚙️ Jenkins CI/CD"] --- C5["🌐 Nginx & Apache"] --- C6["📊 Prometheus & Grafana"] --- C7["☁️ AWS CLI"] --- C8["🗄️ Database CLI"] --- C9["🛡️ Network Security"]
     end
 
-    subgraph Phase4["📊 Phase 4: Data Analytics, BI, AI & Mobile"]
-        D1["📊 Tableau Analytics"] --- D2["📈 Power BI DAX"] --- D3["📗 MS Excel Master"] --- D4["📓 JupyterLab & Magic"] --- D5["🦙 Ollama Local AI"] --- D6["🤗 Hugging Face"] --- D7["📱 Termux Android"]
+    subgraph Phase4["📊 Phase 4: Data Science, AI/ML, Analytics & Mobile"]
+        D1["🐍 33. NumPy & Pandas"] --- D2["🤖 34. PyTorch & TensorFlow"] --- D3["📊 Tableau Analytics"] --- D4["📈 Power BI DAX"] --- D5["📗 MS Excel Master"] --- D6["📓 JupyterLab & Magic"] --- D7["🦙 Ollama Local AI"] --- D8["🤗 Hugging Face"] --- D9["📱 Termux Android"]
     end
 
     Phase1 --> Phase2 --> Phase3 --> Phase4
@@ -55,7 +56,7 @@ graph TD
 
 ---
 
-## 📌 32 Master Shortcut & Core Modules
+## 📌 34 Master Shortcut & Core Modules
 
 | Module ID | Category / Subject | Core Focus & Highlighted Formulas | Booklet Link |
 | :-: | :--- | :--- | :-: |
@@ -91,6 +92,8 @@ graph TD
 | **30** | **📐 System Design Estimation** | Latency Numbers • Powers of 2 Memory Table • QPS Calculation Formula | [**Open Sheet**](30-system-design-interview-estimation-formulas/SHEET.md) |
 | **31** | **🟢 Node.js & Express CLI** | `npm init -y` • `npx kill-port` • `node --watch` • Express template (30 Items) | [**Open Sheet**](31-nodejs-npm-express-cli-shortcuts/SHEET.md) |
 | **32** | **⚛️ React.js & Next.js** | `create vite` • `create-next-app` • `useState`/`useEffect` • Hooks (30 Items) | [**Open Sheet**](32-reactjs-vite-nextjs-hooks-shortcuts/SHEET.md) |
+| **33** | **🐍 NumPy & Pandas** | Arrays, `.reshape()`, `pd.read_csv()`, `.loc[]`, `.iloc[]`, `groupby()` (30 Items) | [**Open Sheet**](33-numpy-pandas-data-science-cheatsheet/SHEET.md) |
+| **34** | **🤖 PyTorch & TensorFlow** | `train_test_split`, PyTorch Tensors, CUDA GPU, Keras Sequential (30 Items) | [**Open Sheet**](34-scikit-learn-tensorflow-pytorch-ai-cheatsheet/SHEET.md) |
 
 ---
 
@@ -139,6 +142,8 @@ BugFix-FM-Master-Shortcut-Booklet/
 ├── 30-system-design-interview-estimation-formulas/# SHEET.md (Easy -> Medium -> Hard)
 ├── 31-nodejs-npm-express-cli-shortcuts/          # SHEET.md (30 Items: Easy -> Medium -> Hard)
 ├── 32-reactjs-vite-nextjs-hooks-shortcuts/       # SHEET.md (30 Items: Easy -> Medium -> Hard)
+├── 33-numpy-pandas-data-science-cheatsheet/      # SHEET.md (30 Items: Easy -> Medium -> Hard)
+├── 34-scikit-learn-tensorflow-pytorch-ai-cheatsheet/# SHEET.md (30 Items: Easy -> Medium -> Hard)
 └── README.md                           # Master Booklet Entry
 ```
 
