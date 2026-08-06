@@ -13,7 +13,7 @@
   <b>A curated, daily-use shortcut & formula booklet written in natural human language with real-world practical usage examples across 17 core engineering and analytics domains.</b>
 </p>
 
-[Explore Booklet Modules](#-17-master-shortcut-modules) • [Visual Ecosystem](#-ecosystem-architecture) • [External Resources](#-essential-resources)
+[Explore Booklet Modules](#-17-master-shortcut-modules) • [Visual Architecture](#-ecosystem-architecture) • [External Resources](#-essential-resources)
 
 </div>
 
@@ -32,58 +32,47 @@
 
 ```mermaid
 flowchart TD
-    subgraph Core["🐧 Phase 1: OS, Editor & Version Control"]
-        Linux["🐧 01. Linux & Kali CLI"]
-        VSCode["💻 02. VS Code Shortcuts"]
-        Git["🐙 03. Git & GitHub Tricks"]
-        Regex["🔣 16. Regex Formulas"]
-        MD["📝 17. Markdown & Diagrams"]
+    subgraph Tier1["💻 Tier 1: Operating System, Editor & Version Control"]
+        direction LR
+        Linux["🐧 Linux & Kali CLI"]
+        VSCode["💻 VS Code Shortcuts"]
+        Git["🐙 Git & GitHub"]
+        Regex["🔣 Regex Formulas"]
+        MD["📝 Markdown Syntax"]
     end
 
-    subgraph InfraDevOps["☁️ Phase 2: Containers, Cloud, DB & DevOps"]
-        Docker["🐳 04. Docker & Compose"]
-        K8s["☸️ 05. Kubernetes (kubectl)"]
-        Jenkins["⚙️ 12. Jenkins CI/CD"]
-        DB["🗄️ 15. Database CLI (SQL/Mongo/Redis)"]
-        SecNet["🛡️ 14. Network Security & Diagnostics"]
+    subgraph Tier2["☁️ Tier 2: Containers, Cloud, DevOps & Database"]
+        direction LR
+        Docker["🐳 Docker & Compose"]
+        K8s["☸️ Kubernetes (kubectl)"]
+        Jenkins["⚙️ Jenkins CI/CD"]
+        DB["🗄️ Database CLI"]
+        SecNet["🛡️ Network Security"]
     end
 
-    subgraph DataAnalytics["📊 Phase 3: Data Analytics & Spreadsheets"]
-        Tableau["📊 06. Tableau Calculated Fields & LOD"]
-        PowerBI["📈 07. Power BI DAX Measures"]
-        Excel["📗 08. MS Excel Master Formulas"]
-        Jupyter["📓 13. JupyterLab & Magic Commands"]
+    subgraph Tier3["📊 Tier 3: Data Analytics, BI & Spreadsheets"]
+        direction LR
+        Tableau["📊 Tableau Analytics"]
+        PowerBI["📈 Power BI DAX"]
+        Excel["📗 MS Excel Master"]
+        Jupyter["📓 JupyterLab & Magic"]
     end
 
-    subgraph AI_Mobile["🤖 Phase 4: Local AI & Mobile Terminal"]
-        Ollama["🦙 09. Ollama Local LLMs"]
-        HF["🤗 10. Hugging Face CLI"]
-        Termux["📱 11. Termux Android Terminal"]
+    subgraph Tier4["🤖 Tier 4: Local AI & Mobile Terminal"]
+        direction LR
+        Ollama["🦙 Ollama Local AI"]
+        HF["🤗 Hugging Face CLI"]
+        Termux["📱 Termux Android"]
     end
 
-    Linux --> VSCode
-    VSCode --> Git
-    Git --> Regex
-    Regex --> MD
-    MD --> Docker
-    Docker --> K8s
-    K8s --> Jenkins
-    Jenkins --> DB
-    DB --> SecNet
-    SecNet --> Tableau
-    Tableau --> PowerBI
-    PowerBI --> Excel
-    Excel --> Jupyter
-    Jupyter --> Ollama
-    Ollama --> HF
-    HF --> Termux
+    Tier1 --> Tier2 --> Tier3 --> Tier4
 ```
 
 ---
 
 ## 📌 17 Master Shortcut Modules
 
-| # | Module / Domain | Core Focus & Highlighted Formulas | Booklet Link |
+| Module ID | Category / Field | Core Focus & Highlighted Formulas | Booklet Link |
 | :-: | :--- | :--- | :-: |
 | **01** | **🐧 Linux & Kali Linux** | `Ctrl+R` (Search history), `sudo !!`, `cd -`, `nohup`, `tail -f`, `pkill` | [**Open Sheet**](01-linux-and-kali-shortcuts/SHEET.md) |
 | **02** | **💻 VS Code Editor** | `Ctrl+P` (Quick open), `Ctrl+Shift+P`, `Alt+Click` multi-cursor, `Ctrl+D` | [**Open Sheet**](02-vscode-keyboard-tricks/SHEET.md) |
@@ -105,7 +94,7 @@ flowchart TD
 
 ---
 
-## 📻 Essential External Resources
+## 📻 Essential Resources
 
 - 🌐 [PortSwigger Web Security Academy](https://portswigger.net/web-security) - Free interactive web security learning platform.
 - 📖 [OWASP Web Security Testing Guide (WSTG)](https://github.com/OWASP/wstg) - Industry standard security auditing methodology.
