@@ -10,10 +10,10 @@
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-Yes-blue.svg?style=for-the-badge&logo=github)](https://github.com/techindro/Penetration-testing-toolkit)
 
 <p align="center">
-  <b>A curated, daily-use shortcut & formula booklet written in natural human language with real-world practical usage examples across 17 core engineering and analytics domains.</b>
+  <b>A curated, daily-use shortcut & formula booklet written in natural human language with real-world practical usage examples across 19 core engineering and analytics domains.</b>
 </p>
 
-[Explore Booklet Modules](#-17-master-shortcut-modules) • [Visual Architecture](#-ecosystem-architecture) • [External Resources](#-essential-resources)
+[Explore Booklet Modules](#-19-master-shortcut-modules) • [Visual Architecture](#-ecosystem-architecture) • [External Resources](#-essential-resources)
 
 </div>
 
@@ -32,12 +32,12 @@
 
 ```mermaid
 graph TD
-    subgraph Phase1["💻 Phase 1: Operating System, Editor & Version Control"]
-        A1["🐧 Linux & Kali CLI"] --- A2["💻 VS Code Shortcuts"] --- A3["🐙 Git & GitHub"] --- A4["🔣 Regex Formulas"] --- A5["📝 Markdown Syntax"]
+    subgraph Phase1["💻 Phase 1: Operating System, Editor, Version Control & Shell"]
+        A1["🐧 Linux & Kali CLI"] --- A2["💻 VS Code Shortcuts"] --- A3["🐙 Git & GitHub"] --- A4["📜 Bash & PowerShell"] --- A5["🔣 Regex Formulas"] --- A6["📝 Markdown Syntax"]
     end
 
-    subgraph Phase2["☁️ Phase 2: Containers, Cloud, DevOps & Database"]
-        B1["🐳 Docker & Compose"] --- B2["☸️ Kubernetes (kubectl)"] --- B3["⚙️ Jenkins CI/CD"] --- B4["🗄️ Database CLI"] --- B5["🛡️ Network Security"]
+    subgraph Phase2["☁️ Phase 2: Containers, Cloud, AWS, DevOps & Database"]
+        B1["🐳 Docker & Compose"] --- B2["☸️ Kubernetes (kubectl)"] --- B3["☁️ AWS Cloud CLI"] --- B4["⚙️ Jenkins CI/CD"] --- B5["🗄️ Database CLI"] --- B6["🛡️ Network Security"]
     end
 
     subgraph Phase3["📊 Phase 3: Data Analytics, BI & Spreadsheets"]
@@ -53,7 +53,7 @@ graph TD
 
 ---
 
-## 📌 17 Master Shortcut Modules
+## 📌 19 Master Shortcut Modules
 
 | Module ID | Category / Field | Core Focus & Highlighted Formulas | Booklet Link |
 | :-: | :--- | :--- | :-: |
@@ -74,6 +74,8 @@ graph TD
 | **15** | **🗄️ Database CLI** | PostgreSQL `psql` (`\dt`), MySQL (`mysql -u`), MongoDB (`mongosh`), Redis | [**Open Sheet**](15-database-cli-shortcuts/SHEET.md) |
 | **16** | **🔣 Regex Formulas** | Email, IPv4, URL validation regex formulas, Lookaheads `(?=...)`, Grep | [**Open Sheet**](16-regex-regular-expressions/SHEET.md) |
 | **17** | **📝 Markdown Syntax** | GFM Alerts (`[!NOTE]`, `[!WARNING]`), KaTeX Math `$$...$$`, Mermaid diagrams | [**Open Sheet**](17-markdown-syntax-cheatsheet/SHEET.md) |
+| **18** | **☁️ AWS Cloud CLI** | `aws configure`, `aws sts get-caller-identity`, `aws s3 ls/cp/sync`, `aws ec2` | [**Open Sheet**](18-aws-cloud-cli-shortcuts/SHEET.md) |
+| **19** | **📜 Shell Scripting** | Bash loops, environment variable `export`, `crontab -e`, PowerShell `Select-String` | [**Open Sheet**](19-bash-powershell-scripting-shortcuts/SHEET.md) |
 
 ---
 
@@ -107,6 +109,8 @@ BugFix-FM-Master-Shortcut-Booklet/
 ├── 15-database-cli-shortcuts/          # SHEET.md (PostgreSQL psql, MySQL, MongoDB, Redis)
 ├── 16-regex-regular-expressions/       # SHEET.md (Email, IP, URL Validation Regex)
 ├── 17-markdown-syntax-cheatsheet/      # SHEET.md (GFM Alerts, KaTeX Math & Mermaid)
+├── 18-aws-cloud-cli-shortcuts/         # SHEET.md (AWS CLI S3, EC2, IAM & STS)
+├── 19-bash-powershell-scripting-shortcuts/ # SHEET.md (Bash Loops, Crontab & PowerShell)
 └── README.md                           # Master Booklet Entry
 ```
 
