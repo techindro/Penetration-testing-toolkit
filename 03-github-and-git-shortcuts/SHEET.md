@@ -1,55 +1,58 @@
-# 🐙 Module 03: Git & GitHub Comprehensive One-Liners & Tricks
+# 🐙 Module 03: Git & GitHub Comprehensive One-Liners & Examples
 
-Essential Git one-liners and GitHub workflow tricks for committing, branch management, fixing mistakes, and clean history visualization.
+Essential Git one-liners and GitHub workflow tricks with clear practical examples.
 
 ---
 
-## ⚡ 1. Git Daily One-Liners
+## ⚡ 1. Git Daily One-Liners with Examples
 
 ```bash
-# Display clean single-line git history with branch graph
+# Example 1: Display clean single-line git history with branch graph
 git log --oneline --graph --all
+# Output:
+# * a1b2c3d (HEAD -> main, origin/main) feat: add authentication API
+# * e5f6g7h fix: resolve CORS policy error
 
-# Save uncommitted changes temporarily without committing
+# Example 2: Save uncommitted changes temporarily without committing
 git stash
-# Restore previously stashed changes
+# Make urgent fix on another branch, then restore:
 git stash pop
 
-# Undo the most recent commit while keeping all code changes in workspace
+# Example 3: Undo the most recent commit while keeping all code changes in workspace
 git reset --soft HEAD~1
+# Usage: Use when you committed too early or forgot to add a file.
 
-# Discard all local uncommitted changes instantly (Fresh start)
+# Example 4: Discard all local uncommitted changes instantly (Fresh start)
 git checkout .
 # or
 git restore .
+# Usage: Reverts all files back to the last clean committed state.
 
-# Update the message of the last commit
-git commit --amend -m "Updated commit message"
+# Example 5: Update the message of the last commit
+git commit --amend -m "feat: complete login endpoint integration"
+# Usage: Fixes typos in your most recent git commit message.
 
-# Rename local branch
-git branch -m old-name new-name
+# Example 6: Rename local branch
+git branch -m main master
 
-# Delete local branch
-git branch -d branch-name
-
-# Delete remote branch on GitHub
-git push origin --delete branch-name
-
-# Clean untracked files and directories from repository
-git clean -fd
+# Example 7: Delete local and remote branch
+git branch -d feature-login
+git push origin --delete feature-login
 ```
 
 ---
 
-## 🚀 2. GitHub Web & CLI Shortcuts
+## 🚀 2. GitHub Web & CLI Examples
 
 ```bash
-# Clone repository using SSH key
-git clone git@github.com:username/repository.git
+# Example 1: Clone repository using SSH key
+git clone git@github.com:techindro/Penetration-testing-toolkit.git
 
-# Test GitHub SSH connection
+# Example 2: Test GitHub SSH connection
 ssh -T git@github.com
+# Output: Hi techindro! You've successfully authenticated, but GitHub does not provide shell access.
 
-# GitHub Web Browser Shortcut:
-# Press '.' (Period key) while viewing any repository on GitHub.com to open web-based VS Code directly in your browser!
+# Example 3: GitHub Web Browser Shortcut
+# Open any GitHub repo (e.g. github.com/facebook/react), press '.' (Period key).
+# Result: Launches full VS Code editor directly in your web browser!
 ```

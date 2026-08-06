@@ -1,33 +1,39 @@
-# 🦙 Module 09: Ollama Local AI & Model Management Commands
+# 🦙 Module 09: Ollama Local AI Commands & Examples
 
-Quick-reference commands for running, pulling, listing, and managing local LLM models with Ollama.
+Quick-reference commands with practical examples for running, pulling, listing, and managing local LLM models with Ollama.
 
 ---
 
-## ⚡ 1. Core Ollama CLI Commands
+## ⚡ 1. Core Ollama CLI Examples
 
 ```bash
-# Run local model (Downloads automatically if missing)
+# Example 1: Run local AI model (Downloads automatically if missing)
 ollama run llama3
+# Usage: Opens interactive chat prompt with Llama-3 model directly in terminal!
 
-# List all downloaded local AI models
+# Example 2: List all downloaded local AI models
 ollama list
+# Output:
+# NAME            ID           SIZE    MODIFIED
+# llama3:latest   a6990ed6be50 4.7 GB  2 days ago
+# mistral:latest  f0861009139f 4.1 GB  1 week ago
 
-# Check currently loaded models running in VRAM
+# Example 3: Check currently loaded models running in GPU VRAM
 ollama ps
+# Output: Shows active running models and allocated VRAM size.
 
-# Stop running model and free GPU VRAM
+# Example 4: Stop running model to instantly free up GPU VRAM
 ollama stop llama3
 
-# Delete local model from disk
+# Example 5: Delete local model file from disk to save storage
 ollama rm llama3
 ```
 
 ---
 
-## 🛠️ 2. Custom Modelfile Setup
+## 🛠️ 2. Custom Modelfile Example
 
-Create a `Modelfile` to customize model system prompts and temperature:
+Create a file named `Modelfile` to build a custom AI persona:
 
 ```dockerfile
 FROM llama3
@@ -37,6 +43,8 @@ SYSTEM """You are a professional coding and analytics assistant explaining conce
 
 Create custom model from Modelfile:
 ```bash
+# Command:
 ollama create my-custom-ai -f ./Modelfile
 ollama run my-custom-ai
+# Result: Starts chat session with your custom system prompt rules!
 ```
