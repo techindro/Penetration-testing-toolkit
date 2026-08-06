@@ -1,57 +1,58 @@
-# 🐧 Module 01: Linux & Kali Linux Comprehensive CLI Shortcuts
+# 🐧 Module 01: Linux & Kali Linux CLI Shortcuts (Easy to Hard)
 
-Complete command shortcuts with practical examples for Linux and Kali Linux administration, terminal navigation, and process management.
-
----
-
-## ⚡ 1. Daily Terminal Keyboard Shortcuts
-
-| Key Combination | Action (What it does) | Practical Usage Example |
-| :--- | :--- | :--- |
-| `Ctrl + R` | Search command history interactively. | Type `Ctrl+R` then `ssh` to quickly find your last `ssh user@192.168.1.5` command. |
-| `Ctrl + C` | Instantly stop/kill the current running program. | Press `Ctrl+C` when `ping google.com` or a script is running infinitely. |
-| `Ctrl + Z` | Suspend current process to background. | Press `Ctrl+Z` while editing in `nano`, then type `fg` to resume editing later. |
-| `Ctrl + L` | Clear terminal screen. | Press `Ctrl+L` instead of typing `clear` to get a fresh clean prompt. |
-| `Ctrl + A` | Move cursor to the beginning of the line. | Jump to start of `sudo apt update` to change `sudo` to `echo`. |
-| `Ctrl + E` | Move cursor to the end of the line. | Jump to end of long command to append `| grep error`. |
-| `Ctrl + U` | Erase line from cursor back to start. | Erase mistyped secret password or long command line instantly. |
-| `Ctrl + W` | Delete word before cursor. | Delete mistyped directory name at the end of `cd /var/www/html/old_folder`. |
-| `Tab` | Auto-complete files & commands. | Type `cd /v` and hit `Tab` to auto-complete to `cd /var/`. |
+Complete command shortcuts with practical examples categorized by difficulty level (🟢 Easy, 🟡 Medium, 🔴 Hard).
 
 ---
 
-## 🪄 2. Fast Command Line Examples
+## 🟢 Level 1: Easy / Beginner Commands
 
 ```bash
-# Example 1: Run previous command as root (sudo) without retyping
-# If you ran: apt update (Permission denied)
-sudo !!
-# Output: Runs 'sudo apt update' automatically.
+# 1. Clear terminal screen
+Ctrl + L
 
-# Example 2: Return to previous working directory instantly
-cd /var/www/html/app/
-cd /etc/nginx/
+# 2. Return to user home directory
+cd ~
+
+# 3. Print current working directory path
+pwd
+
+# 4. List files with permissions and hidden files
+ls -la
+```
+
+---
+
+## 🟡 Level 2: Medium / Intermediate Commands
+
+```bash
+# 1. Search interactive command history
+Ctrl + R
+# Example: Type 'ssh' to find your last remote connection command.
+
+# 2. Return to previous working directory instantly
 cd -
-# Output: Switched back to /var/www/html/app/
 
-# Example 3: Run command in background detached from terminal output
-nohup python3 server.py > server.log 2>&1 &
-# Output: Server runs in background even if you close the terminal.
-
-# Example 4: View real-time output of a growing log file
+# 3. View real-time output of growing log file
 tail -f /var/log/syslog
-# Output: Continuously streams new system log entries as they happen.
 
-# Example 5: Search for a running process PID quickly
+# 4. Search for process PID by name
 pgrep -l node
-# Output: 14520 node
+```
 
-# Example 6: Force kill all processes matching a specific name
+---
+
+## 🔴 Level 3: Hard / Advanced Pro Tricks
+
+```bash
+# 1. Run previous command as root without retyping
+sudo !!
+
+# 2. Detach process and run in background permanently
+nohup python3 server.py > server.log 2>&1 &
+
+# 3. Force kill all processes matching name pattern
 pkill -9 -f node
-# Output: Terminates all running node processes instantly.
 
-# Example 7: Create permanent custom shortcuts (Aliases)
+# 4. Create custom permanent alias
 alias updateall="sudo apt update && sudo apt upgrade -y"
-alias ports="sudo ss -tulpn"
-# Usage: Simply type 'updateall' or 'ports' in terminal.
 ```

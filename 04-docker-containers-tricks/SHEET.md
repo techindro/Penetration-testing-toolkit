@@ -1,51 +1,51 @@
-# 🐳 Module 04: Docker & Container Management Examples
+# 🐳 Module 04: Docker Container Management (Easy to Hard)
 
-One-liner commands for managing containers, inspecting volumes, executing terminal sessions, and performing system cleanups with practical examples.
+Docker container and compose commands categorized by difficulty level (🟢 Easy, 🟡 Medium, 🔴 Hard).
 
 ---
 
-## ⚡ 1. Container Administration Examples
+## 🟢 Level 1: Easy / Beginner Commands
 
 ```bash
-# Example 1: Open interactive bash terminal inside a running container
-docker exec -it my_web_app bash
-# Usage: Opens bash terminal inside 'my_web_app' container to inspect files or run commands.
+# 1. List active running containers
+docker ps
 
-# Example 2: Stop ALL running containers simultaneously
-docker stop $(docker ps -q)
-# Usage: Instantly stops all active containers on your system.
+# 2. List all containers (including stopped ones)
+docker ps -a
 
-# Example 3: Remove ALL stopped containers simultaneously
-docker rm $(docker ps -a -q)
-# Usage: Cleans up all exited container instances.
-
-# Example 4: Remove ALL unused images, containers, networks, and volumes (Deep System Cleanup)
-docker system prune -a --volumes -f
-# Usage: Reclaims tens of gigabytes of disk space taken by dangling Docker build caches.
-
-# Example 5: Inspect container IP address
-docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' my_postgres_db
-# Output: 172.17.0.2
-
-# Example 6: View real-time container CPU, RAM, and network resource usage
-docker stats
-# Output: Live table showing CPU %, MEM USAGE / LIMIT, NET I/O for all containers.
+# 3. Stop a running container
+docker stop container_id
 ```
 
 ---
 
-## 🚀 2. Docker Compose Examples
+## 🟡 Level 2: Medium / Intermediate Commands
 
 ```bash
-# Example 1: Build and start services in background mode
+# 1. Open interactive bash shell inside container
+docker exec -it my_web_app bash
+
+# 2. View real-time container logs
+docker logs -f my_web_app
+
+# 3. Start compose stack in background
 docker compose up -d --build
-# Usage: Builds images and launches web, db, and redis containers in background.
+```
 
-# Example 2: Stop and remove containers, networks, and attached volumes
-docker compose down -v
-# Usage: Shuts down compose stack and deletes volumes for a fresh database reset.
+---
 
-# Example 3: Follow real-time output logs for all compose services
-docker compose logs -f web_service
-# Usage: Streams live console logs specifically from 'web_service'.
+## 🔴 Level 3: Hard / Advanced Pro Tricks
+
+```bash
+# 1. Stop ALL running containers in one line
+docker stop $(docker ps -q)
+
+# 2. Remove ALL stopped containers in one line
+docker rm $(docker ps -a -q)
+
+# 3. Deep system cleanup (Remove unused images, networks, volumes)
+docker system prune -a --volumes -f
+
+# 4. Inspect internal container IP address
+docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' my_container
 ```

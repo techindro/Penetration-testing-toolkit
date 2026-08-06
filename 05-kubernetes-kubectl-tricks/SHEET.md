@@ -1,55 +1,54 @@
-# ☸️ Module 05: Kubernetes (`kubectl`) Comprehensive Examples
+# ☸️ Module 05: Kubernetes (`kubectl`) Commands (Easy to Hard)
 
-Essential `kubectl` one-liners with practical examples for pod debugging, deployments, logs, and namespace management.
+Kubernetes `kubectl` commands categorized by difficulty level (🟢 Easy, 🟡 Medium, 🔴 Hard).
 
 ---
 
-## ⚡ 1. Pod & Node Inspection Examples
+## 🟢 Level 1: Easy / Beginner Commands
 
 ```bash
-# Example 1: Get all running pods across ALL namespaces
-kubectl get pods -A
-# Output: Lists all pods running in default, kube-system, and custom namespaces.
+# 1. Get list of pods in current namespace
+kubectl get pods
 
-# Example 2: Get detailed information and events for a specific pod
-kubectl describe pod web-api-7945d8b7c-x9k2z -n production
-# Usage: Shows container status, restart count, and deployment warning events.
+# 2. Get list of services
+kubectl get svc
 
-# Example 3: View real-time logs for a pod
-kubectl logs -f web-api-7945d8b7c-x9k2z -n production
-# Usage: Follows live log output to debug application crashes.
-
-# Example 4: View logs for a previous crashed container instance inside a pod (-p)
-kubectl logs web-api-7945d8b7c-x9k2z -n production -p
-# Usage: Inspects stdout of the container right before it crashed (OOMKilled / Panic).
-
-# Example 5: Open interactive bash shell inside a running Kubernetes container
-kubectl exec -it web-api-7945d8b7c-x9k2z -n production -- /bin/bash
-# Usage: Enters pod environment to test environment variables or database connectivity.
+# 3. View cluster nodes
+kubectl get nodes
 ```
 
 ---
 
-## 🚀 2. Cluster Deployment & Port Forwarding Examples
+## 🟡 Level 2: Medium / Intermediate Commands
 
 ```bash
-# Example 1: Forward local port 8080 to pod port 80
-kubectl port-forward pod/web-api-7945d8b7c-x9k2z 8080:80
-# Usage: Open http://localhost:8080 in your local browser to test pod directly!
+# 1. Get all running pods across ALL namespaces
+kubectl get pods -A
 
-# Example 2: Restart a deployment gracefully without downtime
-kubectl rollout restart deployment/web-api -n production
-# Usage: Triggers a rolling update to reload config maps or updated container images.
+# 2. View pod logs in real-time
+kubectl logs -f web-pod-name
 
-# Example 3: Rollback deployment to previous working revision
-kubectl rollout undo deployment/web-api -n production
-# Usage: Instantly reverts bad deployment back to previous stable build.
+# 3. Port-forward local port 8080 to pod port 80
+kubectl port-forward pod/web-pod-name 8080:80
+```
 
-# Example 4: Set current default namespace (Saves typing -n <namespace> every time!)
-kubectl config set-context --current --namespace=production
-# Usage: All subsequent 'kubectl get pods' commands automatically query 'production'.
+---
 
-# Example 5: Delete stuck pod forcefully without delay
-kubectl delete pod web-api-7945d8b7c-x9k2z --grace-period=0 --force
-# Usage: Instantly terminates stuck Terminating pods.
+## 🔴 Level 3: Hard / Advanced Pro Tricks
+
+```bash
+# 1. View logs of previous crashed container instance (-p)
+kubectl logs web-pod-name -p
+
+# 2. Execute interactive bash inside pod
+kubectl exec -it web-pod-name -- /bin/bash
+
+# 3. Restart deployment gracefully without downtime
+kubectl rollout restart deployment/web-app
+
+# 4. Rollback deployment to previous stable build
+kubectl rollout undo deployment/web-app
+
+# 5. Delete stuck pod forcefully without delay
+kubectl delete pod web-pod-name --grace-period=0 --force
 ```
